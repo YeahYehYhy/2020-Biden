@@ -167,11 +167,11 @@ jet_data = {
     "gameTitle": "THE HIGHEST MOUNTAIN"
 }
 
-    HistHexcolour=["#c23636","#1072a1","#db8223","#2ca853"];
-    HistName=[" Richard Nixon"," George McGovern"," John Schmitz"," Dr. Spock"];
-    HistEV=[520,17,0,0];
-    HistPV=["47,168,710","29,173,222","1,100,896","301,202"];
-    HistPVP=["60.7%","37.5%","1.4%","0.3%"];
+    HistHexcolour=["#c23636","#1072a1"];
+    HistName=["Mo Udall","John Connally"];
+    HistEV=[367,171];
+    HistPV=["43,182,882","35,906,578"];
+    HistPVP=["54.6%","42.7%"];
 
 //#startcode
 
@@ -916,6 +916,147 @@ tooltipList = [
     #bonus_menu_area {
       margin-top: 120px;
     }
+        }
+        .inner_window_question {
+            min-height: 321px;
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+        }
+        .inner_inner_window {
+            height: auto;
+            transition: height 0.3s ease;
+        }
+        .inner_window_question p {
+            margin: 0;
+            padding: 0;
+            margin-top: auto;
+            transform: translateY(-4px); 
+        }
+
+        #question_form br { display: none; }
+
+        #question_form form {
+            display: grid;
+            grid-template-columns: auto 1fr; 
+            align-items: start;         
+            row-gap: 0;
+            max-width: 930px
+        }
+
+        #question_form input[type="radio"] {
+            grid-column: 1;
+            margin: 0;
+            margin-right: -3px;
+            align-self: center;           
+            transform: translateY(-1px); 
+        }
+
+        #question_form input[type="radio"] + label {
+            grid-column: 2;
+            display: block;                  
+            padding: 3px 6px; 
+            margin: 0;      
+            line-height: 1.2;
+            border: none; 
+            border-bottom: 1px solid #ccc; 
+            background: #f9f9f9;
+            transition: background-color .2s, border-color .2s;
+            cursor: pointer;
+            width: min(100%, 930px);
+        }
+
+        #question_form form > input[type="radio"]:last-of-type + label {
+            border-bottom: none;
+        }
+
+        #question_form label {
+            font-size: 14px;
+            font-weight: 400; 
+            margin: 1px; /* prevent any bottom margin */
+            line-height: 1.2;
+        }
+
+        #question_form input[type="radio"]:checked + label {
+            background: #EDF3F7;
+            border-bottom-color: #548EAD;
+        }
+
+        #question_form input[type="radio"] + label:hover,
+        #question_form input[type="radio"] + label:focus {
+            font-size: 14px;
+            font-weight: 400; 
+            background: #f1f1f1;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #opponent_selection_description_window p {
+                display: none !important;
+            }
+            .inner_window_question {
+                height: auto !important;
+                min-height: 0 !important;
+                max-height: none !important;
+                position: static !important;
+                top: auto !important;
+                bottom: auto !important;
+                flex: 0 1 auto !important;
+                align-self: auto !important;
+                grid-row: auto !important;
+                grid-column: auto !important;
+                justify-self: auto !important;
+                display: flow-root !important;  
+                overflow: visible !important;
+                box-sizing: border-box !important;
+                max-height: 395px;
+            }
+            .inner_window_question > :first-child { margin-top: 0; }
+            .inner_window_question > :last-child  { margin-bottom: 0; }
+
+            .inner_window_question,
+            #results_container,
+            #overall_details_container,
+            #main_content_area_reading,
+            #inner_window_2,
+            #inner_window_3,
+            #inner_window_4,
+            #advisors {
+                font-size: 1.8em;
+            }
+
+            #inner_window_2,
+            #inner_window_3 {
+                height: 82%;
+            }
+
+            #headquarter {
+                overflow: auto;
+                font-size: 1.5em;
+            }
+
+            #inner_window_2 select,
+            #inner_window_3 select,
+            #inner_window_4 select {
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            #inner_window_2 button,
+            #inner_window_3 button,
+            #inner_window_4 button,
+            #game_window button,
+            #headquarter button,
+            #advisorsDiv button {
+                font-size: 1em;
+                line-height: 2em;
+            }
+
+            #inner_window_2,
+            #inner_window_3,
+            #inner_window_4 {
+                overflow: auto;
+            }
+
     `;
     document.head.appendChild(style);
     
