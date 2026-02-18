@@ -336,7 +336,7 @@ function addDynamicCSS() {
         }
 
         button {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -346,7 +346,7 @@ function addDynamicCSS() {
         }
 
         button:hover {
-            background: #620000;
+            background: #400b12;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -366,7 +366,7 @@ function addDynamicCSS() {
         }
 
         #election_id {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -376,7 +376,7 @@ function addDynamicCSS() {
         }
 
         #candidate_id {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -386,7 +386,7 @@ function addDynamicCSS() {
         }
 
         #sort_tab {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -412,7 +412,7 @@ function addDynamicCSS() {
         }
 
         #state_tab {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -422,7 +422,7 @@ function addDynamicCSS() {
         }
 
         #running_mate_id {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -432,7 +432,7 @@ function addDynamicCSS() {
         }
 
         #game_type_id {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -442,7 +442,7 @@ function addDynamicCSS() {
         }
 
         #difficulty_level_id {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -452,7 +452,7 @@ function addDynamicCSS() {
         }
 
         #themePicker {
-            background: #5d0000;
+            background: #692429;
             color: #FFFFFF;
             border: 1px solid #000000;
             font-family: "Arial", sans-serif;
@@ -564,22 +564,22 @@ tooltipList = [
             "https://audio.jukehost.co.uk/NCNFO3LRbjeOmJuQanQ6v0HCLrSqSagt"
         );    
         const newSong2 = new Song(
+            "That'll Be The Day",  
+            "Buddy Holly",            
+            "https://i.imgur.com/BkWkY41.jpeg",
+            "https://audio.jukehost.co.uk/7FSYBXczPckJSvpNcE3neeWSugDpraPK"
+        );
+        const newSong3 = new Song(
             "Peggy Sue", 
             "Buddy Holly",   
             "https://i.imgur.com/0IFC8l6.jpeg",
             "https://dn721604.ca.archive.org/0/items/ka-buddy-holly/45%20Record%20Cabinet/B/buddy%20holly/buddy%20holly%20-%20peggy%20sue.mp3"
         );
-        const newSong3 = new Song(
+        const newSong4 = new Song(
             "Oh Boy!",  
             "Buddy Holly",            
             "https://i.imgur.com/NXijnJh.jpeg",
             "https://audio.jukehost.co.uk/wAtP4XBP8vkYozpN6jB1jQbITWWNfjDS"
-        );
-        const newSong4 = new Song(
-            "That'll Be The Day",  
-            "Buddy Holly",            
-            "https://i.imgur.com/BkWkY41.jpeg",
-            "https://audio.jukehost.co.uk/7FSYBXczPckJSvpNcE3neeWSugDpraPK"
         );
     
         playlist.addSong(newSong1);
