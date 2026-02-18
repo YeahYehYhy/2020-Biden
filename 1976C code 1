@@ -481,8 +481,8 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-    {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former Mentor, Now slowly killing himself. Poor Bastard."},
-    {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former Mentor, Now slowly killing himself. Poor Bastard."},
+    {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor Bastard."},
+    {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor bastard."},
 
 ];
 
