@@ -293,7 +293,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12795,
         "fields": {
             "question": 12762,
-            "description": "e"
+            "description": "Johnson"
         }
     },
     {
@@ -301,7 +301,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12796,
         "fields": {
             "question": 12762,
-            "description": "e"
+            "description": "Lyndon"
         }
     }
 ]
