@@ -225,7 +225,7 @@ function addDynamicCSS() {
     var css = `
 
         .inner_window_question h3 .mytooltip{
-            background-color: #eaaa00;
+            background-color: #cdcdcd;
         }
 
         .mytooltip {
@@ -233,12 +233,12 @@ function addDynamicCSS() {
             display: inline-block;
             cursor: pointer;
             border-radius: 3px;
-            background-color: #eaaa00;
+            background-color: #cdcdcd;
         }
 
         .mytooltip .mytooltiptext {
             width: 150px;
-            background-color: #eaaa00;
+            background-color: #cdcdcd;
             color: black;
             text-align: center;
             border-radius: 6px;
