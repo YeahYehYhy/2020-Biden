@@ -977,7 +977,7 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 33,
         "fields": {
-            "name": "Poverty",
+            "name": "Economics",
             "description": 0,
             "stance_1": "Kill The Poor",
             "stance_desc_1": 0,
@@ -985,7 +985,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_2": 0,
             "stance_3": "Trickle Down Wealth",
             "stance_desc_3": 0,
-            "stance_4": "Eyes Closed",
+            "stance_4": "Balance it Out",
             "stance_desc_4": 0,
             "stance_5": "Expand Welfare",
             "stance_desc_5": 0,
@@ -1000,21 +1000,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 34,
         "fields": {
-            "name": "Social Rights",
+            "name": "Law and Order",
             "description": 0,
-            "stance_1": "Total Regression",
+            "stance_1": "Order over Freedom",
             "stance_desc_1": 0,
-            "stance_2": "Law And Order",
+            "stance_2": "Order",
             "stance_desc_2": 0,
-            "stance_3": "Mildly Regressive",
+            "stance_3": "Law",
             "stance_desc_3": 0,
-            "stance_4": "Open Minded",
+            "stance_4": "Freedom and Order",
             "stance_desc_4": 0,
-            "stance_5": "Justice For All",
+            "stance_5": "Address The Root Cause",
             "stance_desc_5": 0,
-            "stance_6": "Raise Up The Oppressed",
+            "stance_6": "Liberal Idealism",
             "stance_desc_6": 0,
-            "stance_7": "High On LSD",
+            "stance_7": "Anarchists",
             "stance_desc_7": 0,
             "election": 10
         }
@@ -1029,15 +1029,15 @@ campaignTrail_temp.issues_json = [
             "stance_desc_1": 0,
             "stance_2": "Nixon's The One!",
             "stance_desc_2": 0,
-            "stance_3": "Experience Counts!",
+            "stance_3": "Doing Good",
             "stance_desc_3": 0,
             "stance_4": "Doing Alright",
             "stance_desc_4": 0,
             "stance_5": "Could Be Better",
             "stance_desc_5": 0,
-            "stance_6": "Kennedy For Me!",
+            "stance_6": "Udall For Me!",
             "stance_desc_6": 0,
-            "stance_7": "American Hitler",
+            "stance_7": "No Better Than Adolf Hitler",
             "stance_desc_7": 0,
             "election": 10
         }
@@ -1046,21 +1046,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 36,
         "fields": {
-            "name": "Hawkishness",
+            "name": "Busing",
             "description": 0,
-            "stance_1": "Mushroom Cloud Over Hanoi",
+            "stance_1": "Resegregation",
             "stance_desc_1": 0,
-            "stance_2": "Go With Goldwater",
+            "stance_2": "Hell No!",
             "stance_desc_2": 0,
-            "stance_3": "Preserve and Protect",
+            "stance_3": "Not Needed",
             "stance_desc_3": 0,
-            "stance_4": "Slow Responsibility Transfer",
+            "stance_4": "Case By Case",
             "stance_desc_4": 0,
-            "stance_5": "Gradual Withdraw",
+            "stance_5": "Needed",
             "stance_desc_5": 0,
-            "stance_6": "Total Withdraw",
+            "stance_6": "Needed Badly",
             "stance_desc_6": 0,
-            "stance_7": "Nixon To The Hague",
+            "stance_7": "Radical Integrationists",
             "stance_desc_7": 0,
             "election": 10
         }
@@ -1474,7 +1474,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 242,
             "issue": 33,
-            "state_issue_score": 0.888,
+            "state_issue_score": "0.0",
             "weight": 1
         }
     },
@@ -1484,7 +1484,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 242,
             "issue": 34,
-            "state_issue_score": 0.444,
+            "state_issue_score": 0.333,
             "weight": 1
         }
     },
@@ -1504,7 +1504,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 242,
             "issue": 36,
-            "state_issue_score": 0.333,
+            "state_issue_score": 1,
             "weight": 1
         }
     },
@@ -3321,7 +3321,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 91,
             "state": 242,
-            "state_multiplier": 1.25
+            "state_multiplier": 1.06
         }
     },
     {
@@ -3708,7 +3708,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 234,
-            "state_multiplier": 1.25
+            "state_multiplier": 1.16
         }
     },
     {
@@ -3726,7 +3726,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 236,
-            "state_multiplier": 1.15
+            "state_multiplier": 1.12
         }
     },
     {
@@ -3879,7 +3879,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 253,
-            "state_multiplier": 1.17555555
+            "state_multiplier": 1.144
         }
     },
     {
@@ -3933,7 +3933,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 259,
-            "state_multiplier": 1.2
+            "state_multiplier": 1.15
         }
     },
     {
