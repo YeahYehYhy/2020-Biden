@@ -33,7 +33,7 @@ campaignTrail_temp.election_json = [
             "summary": "<strong> Vice President John Connally</strong> has come a long way from being the water boy of Lyndon Johnson. After getting stained with Jack Kennedy's blood, John worked to become more than just another one of Lyndon's lackeys. In Dick Nixon, Connally has found yet another venue to crawl up the ranks of power once more. With Connally's confidence and charm, Nixon has found himself inexplicably enamored with the man. <p> With the President's blessing, John Connally has found himself as the steward for Dick's legacy. With the Nixon name still being political gold, in spite of the downturn the nation has faced since Dick's landslide over Senator McGovern in 1972, the nation seems ready to tread the Nixonian line for four more years. The only way Dick's legacy could be tarnished now is through a political scandal of unprecedented proportions, but there's no way that could happen now, right?",
             "image_url": "https://i.imgur.com/fPHJgUr.png",
             "winning_electoral_vote_number": 270,
-            "advisor_url": "123",
+            "advisor_url": "https://i.imgur.com/sN7b42n.png",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
             "has_visits": 1,
             "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
@@ -167,6 +167,12 @@ jet_data = {
     "gameTitle": "THE HIGHEST MOUNTAIN"
 }
 
+    HistHexcolour=["#c23636","#1072a1","#db8223","#2ca853"];
+    HistName=[" Richard Nixon"," George McGovern"," John Schmitz"," Dr. Spock"];
+    HistEV=[520,17,0,0];
+    HistPV=["47,168,710","29,173,222","1,100,896","301,202"];
+    HistPVP=["60.7%","37.5%","1.4%","0.3%"];
+
 //#startcode
 
 
@@ -190,3 +196,284 @@ document.body.background = "https://i.imgur.com/j1oYlcl.png";
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#fedcdc!important;}</style>";
 
 //#endcode
+
+//Achievements
+campaignTrail_temp.achievements = {
+    "True Cowboy" : {
+        "image" : "https://i.imgur.com/qwb47R3.png",
+        "description" : "Exceed Lyndon",
+        "cannotBeCheated" : true
+    }
+}
+
+//Css and UI
+document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have what it takes to win a Gubernatorial Election?</i></h3>"
+
+function addDynamicCSS() {
+    var css = `
+
+        .inner_window_question h3 .mytooltip{
+            background-color: #eaaa00;
+        }
+
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: #eaaa00;
+        }
+
+        .mytooltip .mytooltiptext {
+            width: 150px;
+            background-color: #eaaa00;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99; 
+            bottom: 50%; 
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+
+        .inner_window_w_desc {
+            border-style: none;
+        }
+
+        .inner_window_w_desc h3 {
+            color: white;
+            margin: 0;
+        }
+
+        .inner_window_question h3 {
+            margin: 0 1em .5em;
+            border: double;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-color: #c9c9c9;
+            background-color: antiquewhite;
+        }
+
+        #map_container {
+            height: 90%;
+            width: 75%;
+            float: left;
+            margin-top: 1em;
+            margin-left: 1em;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-style: double;
+            border-color: #C9C9C9;
+            background-color: antiquewhite;
+        }
+
+        .overlay_window h3 {
+            margin: 0;
+            padding: .3em 0 .1em;
+            font-weight: 700;
+            font-size: 1.5em;
+            background-color: antiquewhite;
+            border-bottom: double;
+            border-color: #C9C9C9;
+        }
+
+        #campaign_sign p {
+            margin: .1em;
+            color: #FFFFFF;
+            font-size: 2.7em;
+            padding: .2em;
+            font-weight: 700;
+            line-height: .5em;
+        }
+
+        #final_results_description {
+            font-size: 16px;
+        }
+
+        #menu_container {
+            background-color: transparent;
+        }
+
+        #overall_result_container {
+            background-color: transparent;
+        }
+
+        .campaign_trail_start_emphasis {
+            padding: .8em;
+            background-color: transparent;
+        }
+
+        button {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #620000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: #4a2601;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #election_id {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #candidate_id {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #sort_tab {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #state_info {
+            background-color: antiquewhite;
+        }
+
+        #state_result {
+            background-color: antiquewhite;
+        }
+
+        #state_result_container {
+            background-color: #9d2235;
+        }
+
+        #overall_result {
+            background-color: antiquewhite;
+        }
+
+        #state_tab {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #running_mate_id {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #game_type_id {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #difficulty_level_id {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #themePicker {
+            background: #5d0000;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            font-family: "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #campaign_sign {
+            background-color: #290008;
+            border-style: solid;
+            border-width: .5em;
+            border-color: #793e3e;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    `;
+
+    var styleElem = document.createElement("style");
+    styleElem.appendChild(document.createTextNode(css));
+    document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
+
+tooltipList = [
+    {searchString: "e", explanationText: "<img src=https://www.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2018/03/mary_gerry2.png&w=1440>Who says Democrats can't gerrymander?"},
+];
+
+//Special Descs
+e.ElectionPopup = "Make a prayer, John."
+e.WinPopup = "Thank fuck."
+e.LosePopup = "Fuck."
+e.SelAnsContText = "Get your head in the game, you need to do something."
