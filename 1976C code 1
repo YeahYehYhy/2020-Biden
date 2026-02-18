@@ -472,6 +472,455 @@ tooltipList = [
     {searchString: "e", explanationText: "<img src=https://www.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2018/03/mary_gerry2.png&w=1440>Who says Democrats can't gerrymander?"},
 ];
 
+
+    RecReading = true;
+
+    const windowsAdvisorTargetNode = document.getElementById("game_window");
+    const windowsAdvisorConfig = { attributes: true, childList: true, subtree: true };
+    const callback = (mutationList, observer) => {
+        let visitWindow = document.getElementsByClassName("overlay_window")[0];
+        if (!visitWindow || visitWindow.classList.contains("done")) return;
+        visitWindow.classList.add("done", "window");
+        let titleBar = visitWindow.querySelector("h3");
+        titleBar.classList.add("title-bar", "title-bar-text");
+        titleBar.style.paddingLeft = "3px";
+    };
+    // const observer = new MutationObserver(callback);
+    // observer.observe(windowsAdvisorTargetNode, windowsAdvisorConfig);
+    
+    class Song {
+        constructor(title, artist, coverLink, audioLink) {
+            this.title = title;
+            this.artist = artist;
+            this.coverLink = coverLink; 
+            this.audioLink = audioLink;
+        }
+        getTitle()     { return this.title; }
+        getArtist()    { return this.artist; }
+        getCoverLink() { return this.coverLink; }
+        getAudioLink() { return this.audioLink; }
+    }
+    
+    class Playlist {
+        constructor() {
+            this.songs = [];
+            this.currentSongIndex = 0;
+        }
+        addSong(song) {
+            this.songs.push(song);
+        }
+        getCurrentSong() {
+            return this.songs[this.currentSongIndex];
+        }
+        playNext() {
+            this.currentSongIndex = (this.currentSongIndex + 1) % this.songs.length;
+        }
+        playPrevious() {
+            this.currentSongIndex = (this.currentSongIndex - 1 + this.songs.length) % this.songs.length;
+        }
+    }
+    window.Playlist = Playlist;
+    window.Song = Song;
+    
+    function changePlaylist(newPlaylist) {
+        playlist = newPlaylist;
+        playlist.currentSongIndex = 0;
+        updateUI();
+        const audio = document.getElementById("audio");
+        audio.src = playlist.getCurrentSong().getAudioLink();
+        audio.play();
+    }
+    window.changePlaylist = changePlaylist;
+    
+    function updateUI() {
+        const currentSong = playlist.getCurrentSong();
+        document.getElementById("track-title").textContent  = currentSong.getTitle();
+        document.getElementById("track-artist").textContent = currentSong.getArtist();
+        const coverArtElem = document.getElementById("cover-art");
+        if (coverArtElem) {
+            coverArtElem.src = currentSong.getCoverLink();
+        }
+    }
+    
+    function setupMusicPlayer() {
+        playlist = new Playlist();
+    
+        const newSong1 = new Song(
+            "John Is Going To Be Alright", 
+            "UVA Miller Center Archives",   
+            "https://i.imgur.com/VII5Pn4.jpeg",
+            "https://audio.jukehost.co.uk/NCNFO3LRbjeOmJuQanQ6v0HCLrSqSagt"
+        );    
+        const newSong2 = new Song(
+            "Peggy Sue", 
+            "Buddy Holly",   
+            "https://i.imgur.com/0IFC8l6.jpeg",
+            "https://dn721604.ca.archive.org/0/items/ka-buddy-holly/45%20Record%20Cabinet/B/buddy%20holly/buddy%20holly%20-%20peggy%20sue.mp3"
+        );
+        const newSong3 = new Song(
+            "Oh Boy!",  
+            "Buddy Holly",            
+            "https://i.imgur.com/NXijnJh.jpeg",
+            "https://audio.jukehost.co.uk/wAtP4XBP8vkYozpN6jB1jQbITWWNfjDS"
+        );
+        const newSong4 = new Song(
+            "That'll Be The Day",  
+            "Buddy Holly",            
+            "https://i.imgur.com/BkWkY41.jpeg",
+            "https://audio.jukehost.co.uk/7FSYBXczPckJSvpNcE3neeWSugDpraPK"
+        );
+    
+        playlist.addSong(newSong1);
+        playlist.addSong(newSong2);
+        playlist.addSong(newSong3);
+        playlist.addSong(newSong4);
+
+        let audio = document.getElementById("audio");
+        if (!audio) {
+            audio = document.createElement("audio");
+            audio.id = "audio";
+            document.body.appendChild(audio);
+        }
+        audio.src = playlist.getCurrentSong().getAudioLink();
+    
+        const tapeRecorder = document.createElement("div");
+        tapeRecorder.id = "tape-recorder";
+        const gameWindow_player = document.getElementById("game_window");
+        gameWindow_player.insertAdjacentElement("afterend", tapeRecorder);
+    
+        const infoOverlay = document.createElement("div");
+        infoOverlay.id = "info-overlay";
+    
+        const titleDiv = document.createElement("div");
+        titleDiv.id = "track-title";
+    
+        const artistDiv = document.createElement("div");
+        artistDiv.id = "track-artist";
+    
+        infoOverlay.appendChild(titleDiv);
+        infoOverlay.appendChild(artistDiv);
+        tapeRecorder.appendChild(infoOverlay);
+    
+        const coverWrapper = document.createElement("div");
+        coverWrapper.id = "cover-wrapper";
+        tapeRecorder.appendChild(coverWrapper);
+    
+        const coverBG = document.createElement("img");
+        coverBG.id = "cover-bg";
+        coverBG.src = "https://i.imgur.com/E2mOaNa.png";
+    
+        const coverArt = document.createElement("img");
+        coverArt.id = "cover-art";
+        coverArt.src = playlist.getCurrentSong().getCoverLink();
+    
+        coverWrapper.appendChild(coverBG);
+        coverWrapper.appendChild(coverArt);
+    
+        const playerBottom = document.createElement("div");
+        playerBottom.id = "player-bottom";
+        tapeRecorder.appendChild(playerBottom);
+    
+        const controlsOverlay = document.createElement("div");
+        controlsOverlay.id = "controls-overlay";
+    
+        const prevButton = document.createElement("button");
+        prevButton.id = "prev-button";
+        prevButton.textContent = "←";
+        prevButton.addEventListener("click", () => {
+            playlist.playPrevious();
+            updateUI();
+            audio.src = playlist.getCurrentSong().getAudioLink();
+            audio.currentTime = 0;
+            audio.play();
+            tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+            toggleButton.textContent = "Stop";
+        });
+    
+        const nextButton = document.createElement("button");
+        nextButton.id = "next-button";
+        nextButton.textContent = "→";
+        nextButton.addEventListener("click", () => {
+            playlist.playNext();
+            updateUI();
+            audio.src = playlist.getCurrentSong().getAudioLink();
+            audio.currentTime = 0;
+            audio.play();
+            tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+            toggleButton.textContent = "Stop";
+        });
+    
+        const volumeSlider = document.createElement("input");
+        volumeSlider.id = "volume-slider";
+        volumeSlider.type = "range";
+        volumeSlider.min = "0";
+        volumeSlider.max = "100";
+        volumeSlider.value = "50";
+        volumeSlider.addEventListener("input", function() {
+            const volumeValue = parseFloat(this.value) / 100;
+            audio.volume = volumeValue;
+        });
+    
+        const toggleButton = document.createElement("button");
+        toggleButton.id = "toggle-button";
+        tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+        toggleButton.textContent = "Stop";
+        toggleButton.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+                toggleButton.textContent = "Stop";
+            } else {
+                audio.pause();
+                tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/Bui2rFO.png')";
+                toggleButton.textContent = "Start";
+            }
+        });
+    
+        controlsOverlay.appendChild(prevButton);
+        controlsOverlay.appendChild(nextButton);
+        controlsOverlay.appendChild(volumeSlider);
+        controlsOverlay.appendChild(toggleButton);
+        playerBottom.appendChild(controlsOverlay);
+    
+        const progressContainer = document.createElement("div");
+        progressContainer.id = "progress-container";
+    
+        const progressBar = document.createElement("input");
+        progressBar.id = "progress-bar";
+        progressBar.type = "range";
+        progressBar.min = 0;
+        progressBar.value = 0;
+        progressBar.step = 1;
+    
+        progressBar.addEventListener("input", (e) => {
+            audio.currentTime = parseFloat(e.target.value);
+        });
+    
+        progressContainer.appendChild(progressBar);
+        playerBottom.appendChild(progressContainer);
+    
+        audio.addEventListener("ended", () => {
+            playlist.playNext();
+            updateUI();
+            audio.src = playlist.getCurrentSong().getAudioLink();
+            audio.currentTime = 0;
+            audio.play();
+            tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+            toggleButton.textContent = "Stop";
+        });
+    
+        updateUI();
+    
+        audio.addEventListener("timeupdate", () => {
+            if (!audio.duration || isNaN(audio.duration)) return;
+            progressBar.max = audio.duration;
+            progressBar.value = audio.currentTime;
+        });
+    
+        audio.play().then(() => {
+            tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/I7jF0Ak.gif')";
+            toggleButton.textContent = "Stop";
+        }).catch(() => {
+            console.log("Autoplay blocked. Waiting for user interaction...");
+            tapeRecorder.style.backgroundImage = "url('https://i.imgur.com/Bui2rFO.png')";
+            toggleButton.textContent = "Start";
+        });
+    }
+    
+    const style = document.createElement("style");
+    style.textContent = `
+    #tape-recorder {
+      width: 495px;
+      height: 325px;
+      transform: scale(0.85);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    #info-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-family: sans-serif;
+      text-shadow: 1px 1px 2px black;
+    }
+    #track-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #track-artist {
+      font-size: 14px;
+      margin-top: 3px;
+    }
+    
+    #cover-wrapper {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    #cover-bg {
+      position: absolute;
+      width: 200px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #cover-art {
+      position: absolute;
+      width: 180px;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    #player-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      z-index: 2;
+    }
+    #controls-overlay {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    #prev-button,
+    #next-button,
+    #toggle-button {
+      appearance: auto;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      font-stretch: normal;
+      font-size: 1rem;
+      font-family: inherit;
+      text-rendering: auto;
+      color: buttontext;
+      letter-spacing: normal;
+      word-spacing: normal;
+      line-height: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: center;
+      align-items: flex-start;
+      cursor: pointer;
+      box-sizing: border-box;
+      background-color: buttonface;
+      margin: 0em;
+      border-width: 2px;
+      border-style: outset;
+      border-color: buttonborder;
+      border-image: initial;
+      padding: 6px 10px;
+      min-width: 60px;
+    }
+    #prev-button:hover,
+    #next-button:hover,
+    #toggle-button:hover {
+      border-style: inset;
+      background-color: #e0e0e0;
+    }
+    
+    #volume-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100px;
+      height: 14px;
+      background-color: buttonface;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    #volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 24px;
+      background: buttonface;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+      margin-top: -5px;
+    }
+    #volume-slider::-moz-range-thumb {
+      width: 14px;
+      height: 24px;
+      background: buttonface;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    
+    #progress-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+    #progress-bar {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 200px;
+      height: 14px;
+      background-color: #515151;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    #progress-bar::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 24px;
+      background: #d0d0d0;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+      margin-top: -5px;
+    }
+    #progress-bar::-moz-range-thumb {
+      width: 14px;
+      height: 24px;
+      background: #d0d0d0;
+      border: 2px solid buttonborder;
+      border-radius: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    
+    #bonus_menu_area {
+      margin-top: 120px;
+    }
+    `;
+    document.head.appendChild(style);
+    
+    setupMusicPlayer();
+
 //Special Descs
 e.ElectionPopup = "Make a prayer, John."
 e.WinPopup = "Thank fuck."
