@@ -50,6 +50,18 @@ campaignTrail_temp.temp_election_list = [
     }
 ]
 
+
+campaignTrail_temp.modBoxTheme = {
+"header_color": "#0000000",
+"header_text_color": "#FFFFFF",
+"header_image_url": "https://i.imgur.com/RY35cYp.png",
+"description_text_color": "#000000",
+"description_background_color": "#f8e5e5",
+"main_color": "#cda47e",
+"secondary_color": "#25090e",
+"ui_text_color": "#FFFFFF"
+}
+
 campaignTrail_temp.credits = "andySandyWandy"
 
 campaignTrail_temp.candidate_json = [
@@ -63,7 +75,7 @@ campaignTrail_temp.candidate_json = [
             "party": "Republican",
             "state": "Texas",
             "priority": 1,
-            "description": "<div style='overflow-y:scroll;height:200px;'><p>\"I find that I take a great deal of pleasure knowing I get up people's noses to some degree.\" <p>\n\nIf you were to ask John Connally to his face why Richard Nixon liked him so much, he might say it's because of his confidence, his direct, to the point attitute, his political prowess. If John Connally were forced to answer that question truthfully, however, he wouldn't really know. <p>\n\nWhat has he done for this country? Well, he helped Dick shock the economy into working again, helped him in getting reelected, he governed the Lone Star state for the better part of a decade. Of course, none of this matters. John Connally is a political chameleon. A former Democrat and Johnson acolyte has fallen right into the hands of the next strongman in power, and has charmed him into letting him become the one that comes after him. <p>\n\nConnally will not let this opportunity slip him by. He will become the next President of the United States off the backs of those who once pulled his strings. If he simply stays the steady course laid out for him, he will breeze to November, and finally reach the White House.",
+            "description": "<div style='overflow-y:scroll;height:200px;'><p><p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#25090e !important; border-color:#25090e!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FDF8F8, #FFF2F2 )!important; font-style: italic; font-size: 14px;'>“I find that I take a great deal of pleasure knowing I get up people's noses to some degree.”</blockquote></p><p>If you were to ask John Connally to his face why Richard Nixon liked him so much, he might say it's because of his confidence, his direct, to the point attitute, his political prowess. If John Connally were forced to answer that question truthfully, however, he wouldn't really know. <p>\n\nWhat has he done for this country? Well, he helped Dick shock the economy into working again, helped him in getting reelected, and he governed the Lone Star state for the better part of a decade. Of course, none of this matters. John Connally is a political chameleon. A former Democrat and Johnson acolyte has fallen right into the hands of the next strongman in power, and has charmed him into letting him become the one that comes after him. <p>\n\nConnally will not let this opportunity slip him by. He will become the next President of the United States off the backs of those who once pulled his strings. If he simply stays the steady course laid out for him, he will breeze to November, and finally reach the White House.",
             "color_hex": "#850f0f",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -94,7 +106,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>\"You go to war with the army you have, not the army you might want or wish to have at a later time.\" <p>\n\nDonald Rumsfeld is the perfect choice to be your backup man. Why? Because he is clean, youthful, and experienced. His hawkish stances will rally the base, his clean record will help clear up the aura of corruption tainting the Nixon Administration after Agnew's resignation. With an extensive record, Rumsfeld has racked up quite the name for himself in Washington. Despite relations with Nixon having been much cooler in his second term, he is still favored by him. <p> With his career prospects already seeming bright, Rumsfeld has found himself a place as the Vice Presidential Nominee for the Republican Party. He will not take this position for granted, however. His similar style of politics signals that he will not sit tight and be a placeholder. Tread lightly.",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p><p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#25090e !important; border-color:#25090e!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FDF8F8, #FFF2F2 )!important; font-style: italic; font-size: 14px;'>“You go to war with the army you have, not the army you might want or wish to have at a later time.”</blockquote></p><p>Donald Rumsfeld is the perfect choice to be your backup man. Why? Because he is clean, youthful, and experienced. His hawkish stances will rally the base, his clean record will help clear up the aura of corruption tainting the Nixon Administration after Agnew's resignation. With an extensive record, Rumsfeld has racked up quite the name for himself in Washington. Despite relations with Nixon having been much cooler in his second term, he is still favored by him. <p> With his career prospects already seeming bright, Rumsfeld has found himself a place as the Vice Presidential Nominee for the Republican Party. He will not take this position for granted, however. His similar style of politics signals that he will not sit tight and be a placeholder. Tread lightly.",
             "candidate_score": 1,
             "running_mate": true
         }
