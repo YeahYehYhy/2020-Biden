@@ -481,7 +481,9 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-    {searchString: "e", explanationText: "<img src=https://www.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/wonkblog/files/2018/03/mary_gerry2.png&w=1440>Who says Democrats can't gerrymander?"},
+    {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former Mentor, Now slowly killing himself. Poor Bastard."},
+    {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former Mentor, Now slowly killing himself. Poor Bastard."},
+
 ];
 
 
