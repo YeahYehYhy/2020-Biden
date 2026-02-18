@@ -34,7 +34,7 @@ campaignTrail_temp.election_json = [
             "image_url": "https://i.imgur.com/fPHJgUr.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://i.imgur.com/sN7b42n.png",
-            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "recommended_reading": "",
             "has_visits": 1,
             "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
         }
@@ -167,7 +167,7 @@ jet_data = {
     "gameTitle": "THE HIGHEST MOUNTAIN"
 }
 
-    HistHexcolour=["#c23636","#1072a1"];
+    HistHexcolour=["#1072a1","#c23636"];
     HistName=["Mo Udall","John Connally"];
     HistEV=[367,171];
     HistPV=["43,182,882","35,906,578"];
@@ -201,7 +201,7 @@ document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_wi
 campaignTrail_temp.achievements = {
     "True Cowboy" : {
         "image" : "https://i.imgur.com/qwb47R3.png",
-        "description" : "Exceed Lyndon",
+        "description" : "Win.",
         "cannotBeCheated" : true
     }
 }
