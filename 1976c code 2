@@ -8,8 +8,8 @@ function ctsAchievement(achievement, difficultyChecker = true){
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color:rgb(197, 67, 67);
-  border-color:rgb(206, 126, 126);
+  background-color: #431b19;
+  border-color: #8f332e;
 }`
 ;
 document.head.appendChild(style_overwrite);
@@ -3292,7 +3292,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 91,
             "state": 237,
-            "state_multiplier": 1
+            "state_multiplier": 1.02
         }
     },
     {
@@ -3652,7 +3652,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 91,
             "state": 277,
-            "state_multiplier": 1.05
+            "state_multiplier": 1
         }
     },
     {
@@ -3724,7 +3724,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 234,
-            "state_multiplier": 1.5
+            "state_multiplier": 1.25
         }
     },
     {
@@ -3751,7 +3751,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 237,
-            "state_multiplier": 1.55
+            "state_multiplier": 1.35
         }
     },
     {
@@ -3787,7 +3787,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 241,
-            "state_multiplier": 1.8
+            "state_multiplier": 1.6
         }
     },
     {
@@ -3931,7 +3931,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 257,
-            "state_multiplier": 1.22222
+            "state_multiplier": 1.4
         }
     },
     {
@@ -3949,7 +3949,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 259,
-            "state_multiplier": 1.5
+            "state_multiplier": 1.3
         }
     },
     {
@@ -3976,7 +3976,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 262,
-            "state_multiplier": 1.55
+            "state_multiplier": 1.3
         }
     },
     {
@@ -4084,7 +4084,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 274,
-            "state_multiplier": 1.65
+            "state_multiplier": 1.5
         }
     },
     {
@@ -4111,7 +4111,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 277,
-            "state_multiplier": 1.5
+            "state_multiplier": 1.65
         }
     },
     {
@@ -4227,164 +4227,6 @@ endingPicker = (out, totv, aa, quickstats) => {
         }, 50);
     }
 
-    if(quickstats[0] > 330) {
-        setImage("");
-        return `<div style='overflow-y:scroll;height:250px;'>`;
-    }
-    if(quickstats[0] > 269) {
-        setImage("https://i.imgur.com/8x4hWPo.jpeg");
-        return `<div style='overflow-y:scroll;height:250px;'>`;
-    }
-    if(quickstats[0] == 269) {
-        setImage("");
-        return `<div style='overflow-y:scroll;height:250px;'><strong>End?</strong><p>
-
-Robert F. Kennedy stood staring at the results unfolding on his television. <p>
-
-How could this have happened? Robert never considered this scenario, it was so improbable for a deadlock to occur without the South holding a rebellion again, the possibility never glimpsed his mind. He would probably be president, of course. Unless Nixon managed a miracle in the state delegations, Hartke and him were going to the White House. Yet it did not feel like a victory. <p>
-
-The crowds outside were not dejected, nor were they parading his "victory" around. They were confused. Nobody was alive the last time the election was deadlocked, when was the last deadlock? The early 1800s? The electoral situation then was very different to now. <p>
-
-Robert found himself plunging deeper into his thoughts. Vance was in another room talking to someone, Ted left the building a few moments ago. Ethel was in the kitchen somewhere, and the kids were doing god knows what. He should be happy, jubilant, really. He knew deep down when he entered the primaries, he couldn't win against Nixon. <p>
-
-Nixon's approval rating was sky-high, for the first time since Jack was in office, Americans as a whole seemed okay with their government. Maybe Dick was right about the "Silent Majority" Bobby thought. Until Nixon's dirty laundry aired themselves out to the world, he was unbeatable. Yet, where did this land Robert? <p>
-
-The nation was more polarized than ever, the chaos in-between the election and his inauguration would leave Bobby with the broom to have to clean this mess up. Was he up to the task? He would receive no applause or triumphant cheers when eventually pulls himself to address the crowd. He hadn't won just yet. <p>
-
-Someone calls his phone, he doesn't answer.
-`;
-    }
-    if(quickstats[0] > 150) {
-        setImage("");
-        return `<div style='overflow-y:scroll;height:250px;'>`;
-    }
-    if(quickstats[0] > 52) {
-        setImage("");
-        return `<div style='overflow-y:scroll;height:250px;'>`;
-    }
-    if(quickstats[0] > 4) {
-        setImage("");
-        return `<div style='overflow-y:scroll;height:250px;'><strong> End.</strong><p>
-
-It was over. <p>
-
-Bobby Kennedy had no delusions about what the outcome of this election would be. The polling he was presented with by his campaign in the final stretch of the season showed that he was facing down death itself. It would've taken a million more scandals in the final week to regain that much lost ground, a million scandals which never came. Already, his supporters were abandoning him. Pretending like they only supported him out of necessity. <p>
-
-McGovern has already made several statements to the press that he "would've won" had he been the nominee ━ what a crock of shit, Bobby thinks. He knows he's lying through his teeth. Vance doesn't seem fazed. Bobby hasn't spoken to him since you gave your concession speech, and nobody has been able to reach him, not like he cared enough to do so. <p>
-
-Was this to be his legacy? He would go down in the history books as the brother who never shaped out. The Little Kennedy that couldn't. He had suffered through a defeat that he would never live down. He had lost worse than fucking Goldwater, and it was all his fault. <p>
-
-Who could he blame but himself? Deep down, he never expected to win, but he had at least hoped to over perform the polls, and he had done worse than even the polls had expected. <p>
-
-A small framed photo of Jack on Bobby's desk stares right through him. His head is flat against the desk. There was no future for him now, after such an embarrassing failure. At least Ted doesn't have one either, after the whole affair fiasco. The thought makes him feel guilty, how could he feel that way about his only living brother? How pathetic, to try to drag down others to his level. He could stay in the Senate━probably, so could Ted. He wasn't out of the game yet. <p>
-
-Unbeknownst to him, Ethel is standing at the doorway, watching him mope over his desk. She eventually shocks him by walking over towards him and caressing his shoulder, causing him to jump up. He calms down when he realizes it's just her. <p>
-
-"Honey, are you okay?" Ethel gently asks. <p>
-
-"Yeah, i'm doing okay." Bobby responds.
-
-They stare at each other for an uncomfortable amount of time before Ethel responds. "Do you want to go out with the kids today? I know you've been down in the dumps for a while, and I think it could help you cheer up." <p>
-
-Bobby's bitterness and anger fades just for a moment. "Sure, Ethel." <p>
-
-As they walk hand in hand out of the house, the sunset over the hills is blinding. Bobby feels a moment of catharsis. As he feels the coldness of the wind over his face and the warmth of the sun over his head contrast, he believes things are going to be okay.`;
-    }
-    if(quickstats[0] < 4) {
-        setImage("https://i.imgur.com/iEUZ9yz.jpeg");
-        return `<div style='overflow-y:scroll;height:250px;'><strong> Milk. </strong> by orphan_account - Archive Of Our Own<p>
-
-TXT ARCHIVE <p>
-
-Robert was a failure. <p>
-
-He knew it, everyone around him knew it, and they treated him like a beaten and broken dog. He could feel their words of "comfort" running around his head, and it did nothing to alleviate the pain of the weight thrust upon his shoulders. It's so fucking degrading. Every bit of warmth given to him by Ethel, Ted, the kids ━ feels like being berated. He feels like a kid again, trapped within the doghouse of his family home, or homes. <p>
-
-Robert is an aberration, he was never meant to be in this position. He tells himself that he never wanted to be in this position. He lies. How many times did Robert imagine himself being inaugurated like Jack once was, back in 1961? How many times did he exert dictatorial control over his subordinates? To compensate for what? He should be doing something━anything, but moping around in his fancy little house. <p>
-
-Christ, when was the last time he did anything but the bare minimum for his kids? While he was out galloping around the country, did Ethel have to parent his children? His aides? Maybe that was why Junior was like that. Bobby was just like his father.<p>
-
-Bobby stumbles into the kitchen in nothing but a white t-shirt and shorts. The kids were out doing god knows what. Ethel was upstairs. He grabs a carton of milk and fucking chugs the whole thing. He slips on the puddle formed under him and hits his head on the hard wood floor. <p>
-
-The pain doesn't register, he lies there for a good while, occasionally writhing in a puddle of milk. His puddle of milk. <p>
-
-"What the fuck are you doing?" Oh. Ethel was here. <p>
-
-Bobby is too tired to say anything, he just opens his mouth and lets his jaw hang open slightly. <p>
-
-"Bobby, get up." <p>
-
-Her words finally reach Bobby's brain and he sits up, his shirt still wet and stained from milk. <p>
-
-"Christ, Bobby, You need to get your mind back." <p>
-
-"Okay." Bobby manages to drag his voice through his throat and spew out a single word. <p>
-
-"Okay?! God." <p>
-
-Ethel picks Bobby up through his shoulders, trying not to touch the milk stained parts of his back, which is a very hard task. She walks Bobby to the bathroom. She quickly gets some clothes from upstairs and comes back. <p>
-
-"You can't stay like this forever. It's been months since the Election." <p>
-
-Bobby doesn't say anything as he shuts the bathroom door behind him. <p>
-
-When he gets out, Ethel is right outside of the bathroom, sitting on the couch. <p>
-
-"Are we going to talk about that?" Ethel says, trying to calm herself.<p>
-
-"About what?" Bobby asks, genuinely confused.<p>
-
-"Oh, I don't know, you being barely conscious on the floor in a puddle of your own mess?" Ethel responds.<p>
-
-"Right." Bobby croaks out. <p>
-
-"So?" <p>
-
-"I don't feel like it." Bobby says, sounding almost bored.<p>
-
-"Okay." Ethel is too fucking tired to deal with his shit, so she shuts up and turns on the TV. <p>
-
-Bobby eventually finds himself asleep in her arms. Ethel follows soon after. Maybe things will be okay.
-
-`;
-    }
-    if(quickstats[0] == 538) {
-        setImage("https://i.imgur.com/hFvwhEH.jpeg");
-        return `<div style='overflow-y:scroll;height:250px;'><strong>Nixon angst fic </strong> by orphan_account - Archive Of Our Own<p>
-
-TXT ARCHIVE <p>
-
-Richard Nixon was a loser. <p>
-
-He believed that losers could be redeemed, he was proven wrong. It was a miracle he hadn't blown his brain out over the walls of the Oval Office. The office in which he had so greatly esteemed and revered had become his tomb. Nixon is lurched over his desk, disheveled. It was a miracle he wasn't staring into a fireplace he had ordered to remain on so he could stare longingly into it. <p>
-
-This was his reality now. His mind scratches and bangs on the walls of the Office, his slicked back hair has become messy and greasy from running his hands through it constantly. Desks were knocked over, papers scattered on the floor. He had broken off one of the yellow curtains behind his desk, and knocked over his Lincoln bust. Pat had left him to his own devices an hour ago. He forced all of his aides out so they couldn't bother him. As if he could be bothered anymore than he already was. <p>
-
-The American people would never let a loser win. He had barely scraped by in 68, a year that was supposed to be the death knell for the Democrats. How the fuck did he lose every state in an election that was supposed to be a goddamn landslide. This should've never happened. Was it the scandals? The damned Watergate? The Chennault affair? Deep down, he knew it was neither. It was him, and him alone. <p>
-
-The near constant stream of calls and messages had halted, it was silent. Fucking finally. <p>
-
-Just as Dick was going to finally get some rest, Pat finally mustered enough courage to walk into the Oval Office. She is shocked seeing what Dick did to the place. She would've cleaned everything had he not realized her presence and lifted his head. <p>
-
-"Dick, I..." Pat meekly says.
-
-"I'm sorry." Nixon says, sudden. He sounds pathetic, his voice is raspy and strained. <p>
-
-"I just wanted to ask you if you were okay, Dick. I'm worried about you." Pat says, with more confidence in her voice. This was her burden to bear. <p>
-
-"Pat. Please.... just go." Dick whispers.
-
-"What?" <p>
-
-"I'm sorry, I just can't handle it. Just get out." Nixon says, finding his voice. <p>
-
-"Okay, Dick. I'll leave you be." Pat leaves the room shortly afterwards. Eyes watery. <p>
-
-Dick Nixon was finally able to wallow in his failures in silence. He falls asleep━lurched over his desk, alone.`;
-    }
-}
-
-
 campaignTrail_temp.jet_data = [{
     "banner_enabled": true,
     "banner_data": {
@@ -4398,79 +4240,12 @@ campaignTrail_temp.jet_data = [{
         "92": "Connally",
         "93": "Hospers"
     },
-    "endings_enabled": true,
-    "ending_data": {
-        "1770091104587": {
-            "id": 1770091104587,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'>",
-            "amount": "330"
-        },
-        "1770091105030": {
-            "id": 1770091105030,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "https://i.imgur.com/8x4hWPo.jpeg",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'>",
-            "amount": "269"
-        },
-        "1770091105444": {
-            "id": 1770091105444,
-            "variable": 0,
-            "operator": "==",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'><strong>End?</strong><p>\n\nRobert F. Kennedy stood staring at the results unfolding on his television. <p>\n\nHow could this have happened? Robert never considered this scenario, it was so improbable for a deadlock to occur without the South holding a rebellion again, the possibility never glimpsed his mind. He would probably be president, of course. Unless Nixon managed a miracle in the state delegations, Hartke and him were going to the White House. Yet it did not feel like a victory. <p>\n\nThe crowds outside were not dejected, nor were they parading his \"victory\" around. They were confused. Nobody was alive the last time the election was deadlocked, when was the last deadlock? The early 1800s? The electoral situation then was very different to now. <p>\n\nRobert found himself plunging deeper into his thoughts. Vance was in another room talking to someone, Ted left the building a few moments ago. Ethel was in the kitchen somewhere, and the kids were doing god knows what. He should be happy, jubilant, really. He knew deep down when he entered the primaries, he couldn't win against Nixon. <p>\n\nNixon's approval rating was sky-high, for the first time since Jack was in office, Americans as a whole seemed okay with their government. Maybe Dick was right about the \"Silent Majority\" Bobby thought. Until Nixon's dirty laundry aired themselves out to the world, he was unbeatable. Yet, where did this land Robert? <p>\n\nThe nation was more polarized than ever, the chaos in-between the election and his inauguration would leave Bobby with the broom to have to clean this mess up. Was he up to the task? He would receive no applause or triumphant cheers when eventually pulls himself to address the crowd. He hadn't won just yet. <p>\n\nSomeone calls his phone, he doesn't answer.\n",
-            "amount": "269"
-        },
-        "1770091106242": {
-            "id": 1770091106242,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'>",
-            "amount": "150"
-        },
-        "1770091107016": {
-            "id": 1770091107016,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'>",
-            "amount": "52"
-        },
-        "1770091179074": {
-            "id": 1770091179074,
-            "variable": 0,
-            "operator": ">",
-            "value": 0,
-            "endingImage": "",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'><strong> End.</strong><p>\n\nIt was over. <p>\n\nBobby Kennedy had no delusions about what the outcome of this election would be. The polling he was presented with by his campaign in the final stretch of the season showed that he was facing down death itself. It would've taken a million more scandals in the final week to regain that much lost ground, a million scandals which never came. Already, his supporters were abandoning him. Pretending like they only supported him out of necessity. <p>\n\nMcGovern has already made several statements to the press that he \"would've won\" had he been the nominee ━ what a crock of shit, Bobby thinks. He knows he's lying through his teeth. Vance doesn't seem fazed. Bobby hasn't spoken to him since you gave your concession speech, and nobody has been able to reach him, not like he cared enough to do so. <p>\n\nWas this to be his legacy? He would go down in the history books as the brother who never shaped out. The Little Kennedy that couldn't. He had suffered through a defeat that he would never live down. He had lost worse than fucking Goldwater, and it was all his fault. <p>\n\nWho could he blame but himself? Deep down, he never expected to win, but he had at least hoped to over perform the polls, and he had done worse than even the polls had expected. <p>\n\nA small framed photo of Jack on Bobby's desk stares right through him. His head is flat against the desk. There was no future for him now, after such an embarrassing failure. At least Ted doesn't have one either, after the whole affair fiasco. The thought makes him feel guilty, how could he feel that way about his only living brother? How pathetic, to try to drag down others to his level. He could stay in the Senate━probably, so could Ted. He wasn't out of the game yet. <p>\n\nUnbeknownst to him, Ethel is standing at the doorway, watching him mope over his desk. She eventually shocks him by walking over towards him and caressing his shoulder, causing him to jump up. He calms down when he realizes it's just her. <p>\n\n\"Honey, are you okay?\" Ethel gently asks. <p>\n\n\"Yeah, i'm doing okay.\" Bobby responds.\n\nThey stare at each other for an uncomfortable amount of time before Ethel responds. \"Do you want to go out with the kids today? I know you've been down in the dumps for a while, and I think it could help you cheer up.\" <p>\n\nBobby's bitterness and anger fades just for a moment. \"Sure, Ethel.\" <p>\n\nAs they walk hand in hand out of the house, the sunset over the hills is blinding. Bobby feels a moment of catharsis. As he feels the coldness of the wind over his face and the warmth of the sun over his head contrast, he believes things are going to be okay.",
-            "amount": "4"
-        },
-        "1770091179448": {
-            "id": 1770091179448,
-            "variable": 0,
-            "operator": "<",
-            "value": 0,
-            "endingImage": "https://i.imgur.com/iEUZ9yz.jpeg",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'><strong> Milk. </strong> by orphan_account - Archive Of Our Own<p>\n\nTXT ARCHIVE <p>\n\nRobert was a failure. <p>\n\nHe knew it, everyone around him knew it, and they treated him like a beaten and broken dog. He could feel their words of \"comfort\" running around his head, and it did nothing to alleviate the pain of the weight thrust upon his shoulders. It's so fucking degrading. Every bit of warmth given to him by Ethel, Ted, the kids ━ feels like being berated. He feels like a kid again, trapped within the doghouse of his family home, or homes. <p>\n\nRobert is an aberration, he was never meant to be in this position. He tells himself that he never wanted to be in this position. He lies. How many times did Robert imagine himself being inaugurated like Jack once was, back in 1961? How many times did he exert dictatorial control over his subordinates? To compensate for what? He should be doing something━anything, but moping around in his fancy little house. <p>\n\nChrist, when was the last time he did anything but the bare minimum for his kids? While he was out galloping around the country, did Ethel have to parent his children? His aides? Maybe that was why Junior was like that. Bobby was just like his father.<p>\n\nBobby stumbles into the kitchen in nothing but a white t-shirt and shorts. The kids were out doing god knows what. Ethel was upstairs. He grabs a carton of milk and fucking chugs the whole thing. He slips on the puddle formed under him and hits his head on the hard wood floor. <p>\n\nThe pain doesn't register, he lies there for a good while, occasionally writhing in a puddle of milk. His puddle of milk. <p>\n\n\"What the fuck are you doing?\" Oh. Ethel was here. <p>\n\nBobby is too tired to say anything, he just opens his mouth and lets his jaw hang open slightly. <p>\n\n\"Bobby, get up.\" <p>\n\nHer words finally reach Bobby's brain and he sits up, his shirt still wet and stained from milk. <p>\n\n\"Christ, Bobby, You need to get your mind back.\" <p>\n\n\"Okay.\" Bobby manages to drag his voice through his throat and spew out a single word. <p>\n\n\"Okay?! God.\" <p>\n\nEthel picks Bobby up through his shoulders, trying not to touch the milk stained parts of his back, which is a very hard task. She walks Bobby to the bathroom. She quickly gets some clothes from upstairs and comes back. <p>\n\n\"You can't stay like this forever. It's been months since the Election.\" <p>\n\nBobby doesn't say anything as he shuts the bathroom door behind him. <p>\n\nWhen he gets out, Ethel is right outside of the bathroom, sitting on the couch. <p>\n\n\"Are we going to talk about that?\" Ethel says, trying to calm herself.<p>\n\n\"About what?\" Bobby asks, genuinely confused.<p>\n\n\"Oh, I don't know, you being barely conscious on the floor in a puddle of your own mess?\" Ethel responds.<p>\n\n\"Right.\" Bobby croaks out. <p>\n\n\"So?\" <p>\n\n\"I don't feel like it.\" Bobby says, sounding almost bored.<p>\n\n\"Okay.\" Ethel is too fucking tired to deal with his shit, so she shuts up and turns on the TV. <p>\n\nBobby eventually finds himself asleep in her arms. Ethel follows soon after. Maybe things will be okay.\n\n",
-            "amount": "4"
-        },
-        "1770097101942": {
-            "id": 1770097101942,
-            "variable": 0,
-            "operator": "==",
-            "value": 0,
-            "endingImage": "https://i.imgur.com/hFvwhEH.jpeg",
-            "endingText": "<div style='overflow-y:scroll;height:250px;'><strong>Nixon angst fic </strong> by orphan_account - Archive Of Our Own<p>\n\nTXT ARCHIVE <p>\n\nRichard Nixon was a loser. <p>\n\nHe believed that losers could be redeemed, he was proven wrong. It was a miracle he hadn't blown his brain out over the walls of the Oval Office. The office in which he had so greatly esteemed and revered had become his tomb. Nixon is lurched over his desk, disheveled. It was a miracle he wasn't staring into a fireplace he had ordered to remain on so he could stare longingly into it. <p>\n\nThis was his reality now. His mind scratches and bangs on the walls of the Office, his slicked back hair has become messy and greasy from running his hands through it constantly. Desks were knocked over, papers scattered on the floor. He had broken off one of the yellow curtains behind his desk, and knocked over his Lincoln bust. Pat had left him to his own devices an hour ago. He forced all of his aides out so they couldn't bother him. As if he could be bothered anymore than he already was. <p>\n\nThe American people would never let a loser win. He had barely scraped by in 68, a year that was supposed to be the death knell for the Democrats. How the fuck did he lose every state in an election that was supposed to be a goddamn landslide. This should've never happened. Was it the scandals? The damned Watergate? The Chennault affair? Deep down, he knew it was neither. It was him, and him alone. <p>\n\nThe near constant stream of calls and messages had halted, it was silent. Fucking finally. <p>\n\nJust as Dick was going to finally get some rest, Pat finally mustered enough courage to walk into the Oval Office. She is shocked seeing what Dick did to the place. She would've cleaned everything had he not realized her presence and lifted his head. <p>\n\n\"Dick, I...\" Pat meekly says.\n\n\"I'm sorry.\" Nixon says, sudden. He sounds pathetic, his voice is raspy and strained. <p>\n\n\"I just wanted to ask you if you were okay, Dick. I'm worried about you.\" Pat says, with more confidence in her voice. This was her burden to bear. <p>\n\n\"Pat. Please.... just go.\" Dick whispers.\n\n\"What?\" <p>\n\n\"I'm sorry, I just can't handle it. Just get out.\" Nixon says, finding his voice. <p>\n\n\"Okay, Dick. I'll leave you be.\" Pat leaves the room shortly afterwards. Eyes watery. <p>\n\nDick Nixon was finally able to wallow in his failures in silence. He falls asleep━lurched over his desk, alone.",
-            "amount": "538"
+    "cyoa_enabled": false,
+    "cyoa_data": {
+        "1771432449798": {
+            "answer": 12793,
+            "question": 12762,
+            "id": 1771432449798
         }
     }
 }
