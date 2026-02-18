@@ -1,0 +1,167 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "1976 - The Highest Mountain",
+            "summary": "<strong> Vice President John Connally</strong> has come a long way from being the water boy of Lyndon Johnson. After getting stained with Jack Kennedy's blood, John worked to become more than just another one of Lyndon's lackeys. In Dick Nixon, Connally has found yet another venue to crawl up the ranks of power once more. With Connally's confidence and charm, Nixon has found himself inexplicably enamored with the man. <p> With the President's blessing, John Connally has found himself as the steward for Dick's legacy. With the Nixon name still being political gold, in spite of the downturn the nation has faced since Dick's landslide over Senator McGovern in 1972, the nation seems ready to tread the Nixonian line for four more years. The only way Dick's legacy could be tarnished now is through a political scandal of unprecedented proportions, but there's no way that could happen now, right?",
+            "image_url": "https://i.imgur.com/fPHJgUr.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "1976 - The Highest Mountain"
+    }
+]
+
+campaignTrail_temp.credits = "andySandyWandy"
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 30,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1001,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Connally",
+            "election": 20,
+            "party": "Republican",
+            "state": "Texas",
+            "priority": 1,
+            "description": "<div style='overflow-y:scroll;height:200px;'><p>\"I find that I take a great deal of pleasure knowing I get up people's noses to some degree.\" <p>\n\nIf you were to ask John Connally to his face why Richard Nixon liked him so much, he might say it's because of his confidence, his direct, to the point attitute, his political prowess. If John Connally were forced to answer that question truthfully, however, he wouldn't really know. <p>\n\nWhat has he done for this country? Well, he helped Dick shock the economy into working again, helped him in getting reelected, he governed the Lone Star state for the better part of a decade. Of course, none of this matters. John Connally is a political chameleon. A former Democrat and Johnson acolyte has fallen right into the hands of the next strongman in power, and has charmed him into letting him become the one that comes after him. <p>\n\nConnally will not let this opportunity slip him by. He will become the next President of the United States off the backs of those who once pulled his strings. If he simply stays the steady course laid out for him, he will breeze to November, and finally reach the White House.",
+            "color_hex": "#850f0f",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1002,
+        "fields": {
+            "first_name": "Donald",
+            "last_name": "Rumsfeld",
+            "election": 20,
+            "party": "Republican",
+            "state": "Illinois",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p>\"You go to war with the army you have, not the army you might want or wish to have at a later time.\" <p>\n\nDonald Rumsfeld is the perfect choice to be your backup man. Why? Because he is clean, youthful, and experienced. His hawkish stances will rally the base, his clean record will help clear up the aura of corruption tainting the Nixon Administration after Agnew's resignation. With an extensive record, Rumsfeld has racked up quite the name for himself in Washington. Despite relations with Nixon having been much cooler in his second term, he is still favored by him. <p> With his career prospects already seeming bright, Rumsfeld has found himself a place as the Vice Presidential Nominee for the Republican Party. He will not take this position for granted, however. His similar style of politics signals that he will not sit tight and be a placeholder. Tread lightly.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 109261,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1002
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#290008",
+    "windowColor": "#ffdbdb",
+    "containerColor": "#793e3e",
+    "innerWindowColor": "#fedcdc",
+    "bannerImageUrl": "https://i.imgur.com/vIpcsae.png",
+    "backgroundImageUrl": "https://i.imgur.com/j1oYlcl.png",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": "THE HIGHEST MOUNTAIN"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>THE HIGHEST MOUNTAIN</h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#290008";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ffdbdb";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#793e3e";
+
+document.getElementById("header").src = "https://i.imgur.com/vIpcsae.png";
+
+document.body.background = "https://i.imgur.com/j1oYlcl.png";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#fedcdc!important;}</style>";
+
+//#endcode
