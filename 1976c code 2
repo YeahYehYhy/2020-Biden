@@ -4501,3 +4501,17 @@ function applyTooltipsToObject(obj) {
 applyTooltipsToObject(campaignTrail_temp.questions_json);
 applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
+campaignTrail_temp.cyoa = true
+
+cyoAdventure = function (a) {
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    /// Buckley senator now
+    if ((campaignTrail_temp.player_answers[0] == 12974)) {
+        campaignTrail_temp.candidate_json[0]["fields"].first_name = "Ronald";
+        campaignTrail_temp.candidate_json[0]["fields"].last_name = "Reagan";
+        campaignTrail_temp.question_number = 29;
+    }
+}
+
+campaignTrail_temp.multiple_endings=true
