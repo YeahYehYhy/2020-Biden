@@ -29,7 +29,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "display_year": "1976 - The Highest Mountain",
+            "display_year": "1976 - The Deepest Valley",
             "summary": "<strong> Vice President John Connally</strong> has come a long way from being the water boy of Lyndon Johnson. After getting stained with Jack Kennedy's blood, John worked to become more than just another one of Lyndon's lackeys. In Dick Nixon, Connally has found yet another venue to crawl up the ranks of power once more. With Connally's confidence and charm, Nixon has found himself inexplicably enamored with the man. <p> With the President's blessing, John Connally has found himself as the steward for Dick's legacy. With the Nixon name still being political gold, in spite of the downturn the nation has faced since Dick's landslide over Senator McGovern in 1972, the nation seems ready to tread the Nixonian line for four more years. The only way Dick's legacy could be tarnished now is through a political scandal of unprecedented proportions, but there's no way that could happen now, right?",
             "image_url": "https://i.imgur.com/fPHJgUr.png",
             "winning_electoral_vote_number": 270,
@@ -46,7 +46,7 @@ campaignTrail_temp.temp_election_list = [
         "id": 20,
         "year": 2016,
         "is_premium": 0,
-        "display_year": "1976 - The Highest Mountain"
+        "display_year": "1976 - The Deepest Valley"
     }
 ]
 
@@ -176,7 +176,7 @@ jet_data = {
     "backgroundImageUrl": "https://i.imgur.com/j1oYlcl.png",
     "endingTextColor": "#000000",
     "customQuote": "",
-    "gameTitle": "THE HIGHEST MOUNTAIN"
+    "gameTitle": "The Deepest Valley"
 }
 
     HistHexcolour=["#1072a1","#c23636"];
@@ -188,7 +188,7 @@ jet_data = {
 //#startcode
 
 
-corrr = '\n              <h2>THE HIGHEST MOUNTAIN</h2>\n            ';
+corrr = '\n              <h2>THE DEEPEST VALLEY</h2>\n            ';
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#290008";
