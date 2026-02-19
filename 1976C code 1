@@ -169,9 +169,9 @@ campaignTrail_temp.opponents_weighted_json = [
 
 jet_data = {
     "headerColor": "#290008",
-    "windowColor": "#ffdbdb",
+    "windowColor": "#b25c5c",
     "containerColor": "#793e3e",
-    "innerWindowColor": "#fedcdc",
+    "innerWindowColor": "#b25c5c",
     "bannerImageUrl": "https://i.imgur.com/vIpcsae.png",
     "backgroundImageUrl": "https://i.imgur.com/j1oYlcl.png",
     "endingTextColor": "#000000",
@@ -193,7 +193,7 @@ corrr = '\n              <h2>THE DEEPEST VALLEY</h2>\n            ';
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#290008";
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ffdbdb";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#b25c5c";
 
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 
@@ -205,7 +205,7 @@ document.getElementById("header").src = "https://i.imgur.com/vIpcsae.png";
 
 document.body.background = "https://i.imgur.com/j1oYlcl.png";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#fedcdc!important;}</style>";
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#b25c5c!important;}</style>";
 
 //#endcode
 
@@ -219,7 +219,7 @@ campaignTrail_temp.achievements = {
 }
 
 //Css and UI
-document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have what it takes to win a Gubernatorial Election?</i></h3>"
+document.getElementById("inner_window_1").children[0].innerHTML="<h3>Do you have what it takes to win a Presidential Election?</i></h3>"
 
 function addDynamicCSS() {
     var css = `
