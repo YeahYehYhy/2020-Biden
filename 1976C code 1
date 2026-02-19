@@ -182,8 +182,8 @@ jet_data = {
     HistHexcolour=["#1072a1","#c23636"];
     HistName=["Mo Udall","John Connally"];
     HistEV=[367,171];
-    HistPV=["43,182,882","37,906,578"];
-    HistPVP=["54.6%","45.9%"];
+    HistPV=["42,182,882","36,906,578"];
+    HistPVP=["53.7%","45.3%"];
 
 //#startcode
 
