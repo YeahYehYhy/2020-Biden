@@ -4,7 +4,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12762,
         "fields": {
             "priority": 0,
-            "description": "e",
+            "description": "Nixon's on his way out of the White House for good, and the only decision you have to make is if you'll run to be his successor. It's been widely speculated that with you replacing Agnew for the Vice Presidential spot, Nixon would give you his endorsement to succeed him. With those arch-conservatives only forming token opposition to the Nixonian Establishment, if you put enough effort in it, the nomination is assured.",
             "likelihood": 1
         }
     },
@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12763,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "Oh Christ, it seems like this primary is going to be much more contentious than anybody thought. Despite us having Nixon enthusiastically endorsing us at every chance, Reagan's shock victory in New Hampshire has given him significant momentum going into the next few primaries. You can't let him take this from you, we need a coherent strategy for the rest of this fight.",
             "likelihood": 1
         }
     },
@@ -285,7 +285,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12794,
         "fields": {
             "question": 12762,
-            "description": "e"
+            "description": "Honestly, while the idea of the Presidency is an enticing idea, I don't think the voters would want me to run. Will the establishment even line up for me? I only just switched from Democrat to Republican 3 years ago, and I just don't think that even with Nixon's approval the party would like me on the ticket. I'll sit this one out."
         }
     },
     {
@@ -293,15 +293,39 @@ campaignTrail_temp.answers_json = [
         "pk": 12795,
         "fields": {
             "question": 12762,
-            "description": "Johnson"
+            "description": "Hell yeah I would. The party is just gonna fall in line eventually. Just bring up my experience and my changed stances, and they'll fold. Make overtures to conservative groups, and send Dole to talk down Reagan from running. They won't dare to defy Nixon, will they?"
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 12796,
+        "pk": 12809,
         "fields": {
-            "question": 12762,
-            "description": "Lyndon"
+            "question": 12763,
+            "description": "I don't give a damn what you have to do to get Reagan from ruining this whole thing. He's a rat bastard, so we just send our own rats to fuck him over. I wanna see him scared of his own shadow."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12810,
+        "fields": {
+            "question": 12763,
+            "description": "Goddamn it, why is he even fucking running? Even if he cinches this away from me, how's he going to win the general? Just look at his polling numbers. This is our only chance to cement conservative dominance. We need to stop these bastards from bitching and moaning just cause i'm on top of the ticket."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12811,
+        "fields": {
+            "question": 12763,
+            "description": "With Reagan pushing us to the brink in the North, I want us to look south. I was a former Democrat turned Republican from how far left they're turning, i'm sure many of my fellow southerners have a similar story. Reagan's an out of touch Californian. I want to see us start winning again in the South, get me up on a stage with as many red Southerners you can find."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12812,
+        "fields": {
+            "question": 12763,
+            "description": "Come on. Reagan's a dumb son of bitch, but surely he knows that there's no chance in hell he secures the nomination? We need to pivot further to the right, give him some basic concessions. Maybe promise him a place in our Administration. He'll come out of this with a win, and we'll avoid damaging this party further."
         }
     }
 ]
@@ -1002,13 +1026,13 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Law and Order",
             "description": 0,
-            "stance_1": "Order over Freedom",
+            "stance_1": "Order Over Freedom",
             "stance_desc_1": 0,
             "stance_2": "Order",
             "stance_desc_2": 0,
             "stance_3": "Law",
             "stance_desc_3": 0,
-            "stance_4": "Freedom and Order",
+            "stance_4": "Freedom And Order",
             "stance_desc_4": 0,
             "stance_5": "Address The Root Cause",
             "stance_desc_5": 0,
@@ -1474,7 +1498,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 242,
             "issue": 33,
-            "state_issue_score": "0.0",
+            "state_issue_score": 0,
             "weight": 1
         }
     },
@@ -3117,7 +3141,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 91,
             "issue": 33,
-            "issue_score": 0
+            "issue_score": 0.0001
         }
     },
     {
@@ -3126,7 +3150,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 91,
             "issue": 34,
-            "issue_score": 0
+            "issue_score": 0.0001
         }
     },
     {
@@ -3135,7 +3159,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 91,
             "issue": 35,
-            "issue_score": 0
+            "issue_score": 0.0001
         }
     },
     {
@@ -3144,7 +3168,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 91,
             "issue": 36,
-            "issue_score": 0
+            "issue_score": 0.0001
         }
     },
     {
@@ -3153,7 +3177,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 92,
             "issue": 33,
-            "issue_score": 0
+            "issue_score": -0.0001
         }
     },
     {
@@ -3162,7 +3186,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 92,
             "issue": 34,
-            "issue_score": 0
+            "issue_score": -0.0001
         }
     },
     {
@@ -3171,7 +3195,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 92,
             "issue": 35,
-            "issue_score": 0
+            "issue_score": -0.0001
         }
     },
     {
@@ -3180,7 +3204,7 @@ campaignTrail_temp.candidate_issue_score_json = [
         "fields": {
             "candidate": 92,
             "issue": 36,
-            "issue_score": 0
+            "issue_score": -0.0001
         }
     }
 ]
@@ -3699,7 +3723,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 92,
             "state": 233,
-            "state_multiplier": 1.3
+            "state_multiplier": 1.35
         }
     },
     {
@@ -4151,34 +4175,190 @@ campaignTrail_temp.answer_score_global_json = [
         "pk": 12800,
         "fields": {
             "answer": 12794,
-            "candidate": 91,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "global_multiplier": -0.23
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 12803,
+        "fields": {
+            "answer": 12795,
+            "candidate": 92,
             "affected_candidate": 91,
-            "global_multiplier": 0.35
+            "global_multiplier": -0.03
         }
     }
 ]
 
 campaignTrail_temp.answer_score_issue_json = []
 
-campaignTrail_temp.answer_score_state_json = []
-
-campaignTrail_temp.answer_feedback_json = [
+campaignTrail_temp.answer_score_state_json = [
     {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 12797,
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12801,
         "fields": {
-            "answer": 12796,
+            "answer": 12794,
+            "state": 257,
             "candidate": 92,
-            "answer_feedback": "As the words \"values\" and \"integrity\" leave your mouth, you stifle a burning feeling in your throat. You know this nation lost those long ago. The McGovernites seem happy with your concessions, even McGovern himself tries to strike up conversation with you after you're done. You ignore him as you leave the premises. "
+            "affected_candidate": 92,
+            "state_multiplier": -0.1
         }
     },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12802,
+        "fields": {
+            "answer": 12794,
+            "state": 256,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12804,
+        "fields": {
+            "answer": 12795,
+            "state": 232,
+            "candidate": 92,
+            "affected_candidate": 91,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12805,
+        "fields": {
+            "answer": 12795,
+            "state": 255,
+            "candidate": 92,
+            "affected_candidate": 91,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12806,
+        "fields": {
+            "answer": 12795,
+            "state": 241,
+            "candidate": 92,
+            "affected_candidate": 91,
+            "state_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12807,
+        "fields": {
+            "answer": 12795,
+            "state": 273,
+            "candidate": 92,
+            "affected_candidate": 91,
+            "state_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12808,
+        "fields": {
+            "answer": 12795,
+            "state": 248,
+            "candidate": 92,
+            "affected_candidate": 91,
+            "state_multiplier": -0.03
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12817,
+        "fields": {
+            "answer": 12794,
+            "state": 264,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12818,
+        "fields": {
+            "answer": 12794,
+            "state": 240,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.2
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12819,
+        "fields": {
+            "answer": 12794,
+            "state": 241,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12820,
+        "fields": {
+            "answer": 12794,
+            "state": 248,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12821,
+        "fields": {
+            "answer": 12794,
+            "state": 273,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.25
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12822,
+        "fields": {
+            "answer": 12794,
+            "state": 237,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 12823,
+        "fields": {
+            "answer": 12794,
+            "state": 262,
+            "candidate": 92,
+            "affected_candidate": 92,
+            "state_multiplier": -0.1
+        }
+    }
+]
+
+campaignTrail_temp.answer_feedback_json = [
     {
         "model": "campaign_trail.answer_feedback",
         "pk": 12798,
         "fields": {
             "answer": 12795,
             "candidate": 92,
-            "answer_feedback": "Your outreach towards those who have voted Democratic since Roosevelt has not gone unnoticed. The remaining southern Democrats grumble about how you were born in Massachusetts, as enthusiastic McGovern voters shut their mouths before they say anything stupid. You'll make sure they'll all fall in line eventually. Power makes anyone submit. Except Jack."
+            "answer_feedback": "Well, it seems that the party isn't just going to lay down and take you. Despite the President's direct endorsement, and your numerous concessions, disaffected Republicans have gathered around Reagan to stop your candidacy. What a crass bastard. Why is he even running?"
         }
     },
     {
@@ -4187,7 +4367,43 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12794,
             "candidate": 92,
-            "answer_feedback": "The speech is widely hailed as one of your best as the party seems to enter a nostalgia-filled trance for just a moment. They stare starry-eyed at you as you say all the right lines. The spell you have cast over the party dissipates as fast as it began, shortly after the Convention, the long-haired youth continues to lambast you as an extension of Lyndon Johnson's Democratic Party. You are quieter, nowadays."
+            "answer_feedback": "Alright, John. Reagan wasn't really a major player, but if you say so. Lets hope Reagan can get another victory for the party. Maybe you'll find a way in his cabinet, if he wins."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12813,
+        "fields": {
+            "answer": 12810,
+            "candidate": 92,
+            "answer_feedback": "You walk hand in hand with party insiders like Dole and Ford as you proclaim that Ronald Reagan has no chance in November. The establishment has firmly cemented themselves within your grasp. Reagan's numbers continue to plunge across the Midwest as the base finally comes to accept you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12814,
+        "fields": {
+            "answer": 12809,
+            "candidate": 92,
+            "answer_feedback": "Nixon's people \"leak\" a story to the press about Representative and Reagan staffer Jack Kemp's alleged homosexual activities at a winter cabin. It doesn't involve Reagan himself enough for it to be a major scandal, but it does make some─particularly evangelicals, skeptical of him."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12815,
+        "fields": {
+            "answer": 12811,
+            "candidate": 92,
+            "answer_feedback": "You stump the South with Tower, Baker, whoever the hell your people could find. There aren't many big Southern Republican politicians you could spend time with. Your numbers slowly improve with Evangelicals and Reagan's lead in Texas narrows rapidly in the polls. You're set to make major breakthroughs in the South, at the cost of the margins in the Midwest."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12816,
+        "fields": {
+            "answer": 12812,
+            "candidate": 92,
+            "answer_feedback": "Reagan fully rejects any overtures from our campaign, to the praise of the arch-conservatives. He wants the nomination or nothing. He makes a fool out of you, claiming that you're desperate for an out of the routing he'll do to you. What a fucking idiot. You'll make sure his career burns after you win this."
         }
     }
 ]
@@ -4210,9 +4426,8 @@ campaignTrail_temp.jet_data = [{
     "nicknames": {
         "91": "Udall",
         "92": "Connally",
-        "93": "Hospers"
     },
-    "cyoa_enabled": false,
+    "cyoa_enabled": true,
     "cyoa_data": {
         "1771432449798": {
             "answer": 12793,
