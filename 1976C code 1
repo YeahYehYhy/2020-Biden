@@ -566,28 +566,63 @@ tooltipList = [
             "https://audio.jukehost.co.uk/NCNFO3LRbjeOmJuQanQ6v0HCLrSqSagt"
         );    
         const newSong2 = new Song(
-            "That'll Be The Day",  
-            "Buddy Holly",            
-            "https://i.imgur.com/BkWkY41.jpeg",
-            "https://audio.jukehost.co.uk/7FSYBXczPckJSvpNcE3neeWSugDpraPK"
+            "White Room",  
+            "Cream",            
+            "https://i.imgur.com/7Q0F3oP.jpeg",
+            "https://audio.jukehost.co.uk/Owh6I88ERy30flmAtQ0Dfovou1DKHvWf"
         );
         const newSong3 = new Song(
-            "Peggy Sue", 
-            "Buddy Holly",   
-            "https://i.imgur.com/0IFC8l6.jpeg",
-            "https://dn721604.ca.archive.org/0/items/ka-buddy-holly/45%20Record%20Cabinet/B/buddy%20holly/buddy%20holly%20-%20peggy%20sue.mp3"
+            "Lover Man", 
+            "Jimi Hendrix",   
+            "https://i.imgur.com/rxIHkLG.jpeg",
+            "https://audio.jukehost.co.uk/XMnadRCZjfTwmL1xCYBdvoDNjOERbzYF"
         );
         const newSong4 = new Song(
-            "Oh Boy!",  
-            "Buddy Holly",            
-            "https://i.imgur.com/NXijnJh.jpeg",
-            "https://audio.jukehost.co.uk/wAtP4XBP8vkYozpN6jB1jQbITWWNfjDS"
+            "Green Onions",  
+            "Booker-T, The MGs",            
+            "https://i.imgur.com/Otb3GsF.jpeg",
+            "https://audio.jukehost.co.uk/crw5TxfBUyPE9m44hLAUJc9C56Y5RulP"
         );
-    
+        const newSong5 = new Song(
+            "Low Rider",  
+            "War",            
+            "https://i.imgur.com/2RR7UoP.jpeg",
+            "https://audio.jukehost.co.uk/ViFvsUdUqA5uaKbCwKfTsK5KZjR0sZHa"
+        );
+        const newSong6 = new Song(
+            "Play That Funky Music", 
+            "Wild Cherry",   
+            "https://i.imgur.com/Gl3x3Xt.jpeg",
+            "https://audio.jukehost.co.uk/4CG3vxxQ7bigUSyG0J6aJqdtNQZt6rcC"
+        );
+        const newSong7 = new Song(
+            "Do It Again",  
+            "Steely Dan",            
+            "https://i.imgur.com/5FKH5Tc.jpeg",
+            "https://audio.jukehost.co.uk/0XtCHmuW1sSIG525YmXJ9vBBY17i3LdU"
+        );
+        const newSong8 = new Song(
+            "Sunshine Of Your Love",  
+            "Cream",            
+            "https://i.imgur.com/HTOiJyv.jpeg",
+            "https://audio.jukehost.co.uk/HNQaMxAlRTfQSTgcSdIES1dUzing75AU"
+        );
+        const newSong9 = new Song(
+            "Fly Like An Eagle",  
+            "Steve Miller Band",            
+            "https://i.imgur.com/9EZdjGp.jpeg",
+            "https://audio.jukehost.co.uk/PuadREQETcqZl7pyshejMwsoCRmI2yKl"
+        );
+
         playlist.addSong(newSong1);
         playlist.addSong(newSong2);
         playlist.addSong(newSong3);
         playlist.addSong(newSong4);
+        playlist.addSong(newSong5);
+        playlist.addSong(newSong6);
+        playlist.addSong(newSong7);
+        playlist.addSong(newSong8);
+        playlist.addSong(newSong9);
 
         let audio = document.getElementById("audio");
         if (!audio) {
