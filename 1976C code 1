@@ -1,3 +1,32 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 1976,
+            "display_year": "1976 - The Deepest Valley",
+            "summary": "<strong> The 70s,</strong> once a decade promised to be one of healing and reconciliation, has become one of stagnation. Dick Nixon's steady hold of the nation is approaching it's end, yet his legacy continues with newly planted Vice President John Connally's incoming seizure of the Republican nomination. with the frigid political climate perpetually trapped in 1972, the nation's old habits seem to be returning, with yet another strong-man headed to command the nation. <p> Connally's job seems easy enough. The nomination is expected to be a coronation. The general election seems to be a breeze, with the Democrats divided and weak. John stands upon the highest mountain, with the world beneath his feet. He cannot grow complacent, however. To anyone paying attention, they know that John's hill is made of sand. One wrong step, and he may find himself tumbling into The Deepest Valley.",
+            "image_url": "https://i.imgur.com/AsmTFTg.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://i.imgur.com/sN7b42n.png",
+            "recommended_reading": "",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+];
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 1976,
+        "is_premium": 0,
+        "display_year": "1976 - The Deepest Valley"
+    }
+];
+
+campaignTrail_temp.credits = "andySandyWandy";
+
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
@@ -21,48 +50,7 @@ campaignTrail_temp.global_parameter_json = [
             "no_state_map_color_hex": "#999999"
         }
     }
-]
-
-campaignTrail_temp.election_json = [
-    {
-        "model": "campaign_trail.election",
-        "pk": 20,
-        "fields": {
-            "year": 1976,
-            "display_year": "1976 - The Deepest Valley",
-            "summary": "<strong> The 70s,</strong> once a decade promised to be one of healing and reconciliation, has become one of stagnation. Dick Nixon's steady hold of the nation is approaching it's end, yet his legacy continues with newly planted Vice President John Connally's incoming seizure of the Republican nomination. with the frigid political climate perpetually trapped in 1972, the nation's old habits seem to be returning, with yet another strong-man headed to command the nation. <p> Connally's job seems easy enough. The nomination is expected to be a coronation. The general election seems to be a breeze, with the Democrats divided and weak. John stands upon the highest mountain, with the world beneath his feet. He cannot grow complacent, however. To anyone paying attention, they know that John's hill is made of sand. One wrong step, and he may find himself tumbling into The Deepest Valley.",
-            "image_url": "https://i.imgur.com/AsmTFTg.png",
-            "winning_electoral_vote_number": 270,
-            "advisor_url": "https://i.imgur.com/sN7b42n.png",
-            "recommended_reading": "",
-            "has_visits": 1,
-            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
-        }
-    }
-]
-
-campaignTrail_temp.temp_election_list = [
-    {
-        "id": 20,
-        "year": 1976,
-        "is_premium": 0,
-        "display_year": "1976 - The Deepest Valley"
-    }
-]
-
-
-campaignTrail_temp.modBoxTheme = {
-"header_color": "#0000000",
-"header_text_color": "#FFFFFF",
-"header_image_url": "https://i.imgur.com/RY35cYp.png",
-"description_text_color": "#000000",
-"description_background_color": "#f8e5e5",
-"main_color": "#cda47e",
-"secondary_color": "#25090e",
-"ui_text_color": "#FFFFFF"
-}
-
-campaignTrail_temp.credits = "andySandyWandy"
+];
 
 campaignTrail_temp.candidate_json = [
     {
@@ -115,11 +103,11 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 91,
         "fields": {
-            "first_name": "Mo",
-            "last_name": "Udall",
+            "first_name": "",
+            "last_name": "The Enemy",
             "election": 20,
             "party": "Democratic",
-            "state": "Idaho",
+            "state": "StupidIdiotTown",
             "priority": 1,
             "description": "<p>Put description here</p>",
             "color_hex": "#28227c",
@@ -133,8 +121,31 @@ campaignTrail_temp.candidate_json = [
             "candidate_score": 1,
             "running_mate": false
         }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 103,
+        "fields": {
+            "first_name": "",
+            "last_name": "Spoilers",
+            "election": 20,
+            "party": "Party",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#006b1b",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
     }
-]
+];
 
 campaignTrail_temp.running_mate_json = [
     {
@@ -145,27 +156,29 @@ campaignTrail_temp.running_mate_json = [
             "running_mate": 102
         }
     }
-]
+];
 
 campaignTrail_temp.opponents_default_json = [
     {
         "election": 20,
         "candidates": [
             92,
-            91
+            91,
+            103
         ]
     }
-]
+];
 
 campaignTrail_temp.opponents_weighted_json = [
     {
         "election": 20,
         "candidates": [
             92,
-            91
+            91,
+            103
         ]
     }
-]
+];
 
 jet_data = {
     "headerColor": "#290008",
@@ -174,9 +187,9 @@ jet_data = {
     "innerWindowColor": "#b25c5c",
     "bannerImageUrl": "https://i.imgur.com/vIpcsae.png",
     "backgroundImageUrl": "https://i.imgur.com/j1oYlcl.png",
-    "endingTextColor": "#000000",
+    "gameTitle": "The Deepest Valley",
     "customQuote": "",
-    "gameTitle": "The Deepest Valley"
+    "endingTextColor": "#000000"
 }
 
     HistHexcolour=["#1072a1","#c23636"];
@@ -186,27 +199,53 @@ jet_data = {
     HistPVP=["53.7%","45.3%"];
 
 //#startcode
+function applyTheme(theme) {
+    const gameHeader = document.querySelector(".game_header");
+    if (gameHeader && theme.coloring_title) {
+        gameHeader.style.backgroundColor = theme.coloring_title;
+    }
 
+    const gameWindow = document.getElementById("game_window");
+    if (gameWindow && theme.coloring_window) {
+        gameWindow.style.backgroundColor = theme.coloring_window;
+    }
 
-corrr = '\n              <h2>THE DEEPEST VALLEY</h2>\n            ';
+    const container = document.querySelector(".container");
+    if (container && theme.coloring_container) {
+        container.style.backgroundColor = theme.coloring_container;
+    }
 
+    const headerImg = document.getElementById("header");
+    if (headerImg && theme.header_image) {
+        headerImg.src = theme.header_image;
+    }
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#290008";
+    if (theme.body_background) {
+        document.body.style.backgroundImage = `url("${theme.body_background}")`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+    }
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#b25c5c";
+    const style = document.createElement("style");
+    style.textContent = `
+      #results_container { color: #000000; }
+      .inner_window_w_desc { background-color: #b25c5c !important; }
+    `;
+    document.head.appendChild(style);
+}
 
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+corrr = '\n              <h2>The Deepest Valley</h2>\n            ';
 
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+const theme = nct_stuff.themes[nct_stuff.selectedTheme];
 
-$(".container")[0].style.backgroundColor = "#793e3e";
+// define / override theme values
+theme.coloring_title     = "#290008";
+theme.coloring_window    = "#b25c5c";
+theme.coloring_container = "#793e3e";
+theme.header_image = "https://i.imgur.com/vIpcsae.png";
+theme.body_background = "https://i.imgur.com/j1oYlcl.png";
 
-document.getElementById("header").src = "https://i.imgur.com/vIpcsae.png";
-
-document.body.background = "https://i.imgur.com/j1oYlcl.png";
-
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#b25c5c!important;}</style>";
-
+applyTheme(theme);
 //#endcode
 
 //Achievements
@@ -1116,3 +1155,79 @@ e.ElectionPopup = "Make a prayer, John."
 e.WinPopup = "Thank fuck."
 e.LosePopup = "Fuck."
 e.SelAnsContText = "Get your head in the game, you need to do something."
+
+document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
+
+const favican = document.createElement("link");
+favican.rel = "icon";
+favican.type = "png";
+favican.href = "https://i.imgur.com/zUGKrED.png";
+
+document.head.appendChild(favican);
+
+// Advisor feedback animation
+
+document.head.innerHTML += `
+<style>
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes hologlow {
+    0% {
+      box-shadow: 0 0 8px rgba(174, 234, 255, 0.4),
+                  0 0 20px rgba(174, 234, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 16px rgba(174, 234, 255, 0.7),
+                  0 0 40px rgba(174, 234, 255, 0.4);
+    }
+  }
+
+  .overlay_window {
+    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards,
+               gradientShift 30s ease infinite,
+               hologlow 1s ease-in-out infinite alternate;
+    opacity: 0;
+    background: linear-gradient(135deg, #1a1a1a, #222222, #2e2e2e);
+    background-size: 300% 300%;
+    border-radius: 0.7rem;
+    box-shadow:
+      0 0 1.2em rgba(174, 234, 255, 0.4),
+      0 0 2.5em rgba(174, 234, 255, 0.2);
+    display: flex;
+    flex-flow: column;
+    color: #e6faff;
+    padding: 1.5em;
+  }
+
+  .overlay_window h3 {
+    margin: 0;
+    padding: 0.6em 1em;
+    font-size: 1.4em;
+    background: #1a1a1a;
+    border-radius: 0.7rem 0.7rem 0 0;
+    color: #f0f0f0;
+    text-shadow: 0 0 6px rgba(174, 234, 255, 0.5);
+  }
+
+  .overlay_window p {
+    margin: 0.7em 0 0 0;
+    line-height: 1.5em;
+    color: #f5faff;
+  }
+</style>
+`;
