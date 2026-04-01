@@ -271,7 +271,7 @@ function addDynamicCSS() {
             position: relative;
             display: inline-block;
             cursor: pointer;
-            border-radius: 3px;
+            border-radius: 5px;
             background-color: #d89393;
         }
 
@@ -522,6 +522,7 @@ addDynamicCSS();
 tooltipList = [
     {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor bastard."},
     {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor bastard."},
+    {searchString: "this.", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>"},
 
 ];
 
@@ -1166,68 +1167,3 @@ favican.href = "https://i.imgur.com/zUGKrED.png";
 document.head.appendChild(favican);
 
 // Advisor feedback animation
-
-document.head.innerHTML += `
-<style>
-  @keyframes fadeInScale {
-    0% {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  @keyframes hologlow {
-    0% {
-      box-shadow: 0 0 8px rgba(174, 234, 255, 0.4),
-                  0 0 20px rgba(174, 234, 255, 0.2);
-    }
-    100% {
-      box-shadow: 0 0 16px rgba(174, 234, 255, 0.7),
-                  0 0 40px rgba(174, 234, 255, 0.4);
-    }
-  }
-
-  .overlay_window {
-    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards,
-               gradientShift 30s ease infinite,
-               hologlow 1s ease-in-out infinite alternate;
-    opacity: 0;
-    background: linear-gradient(135deg, #1a1a1a, #222222, #2e2e2e);
-    background-size: 300% 300%;
-    border-radius: 0.7rem;
-    box-shadow:
-      0 0 1.2em rgba(174, 234, 255, 0.4),
-      0 0 2.5em rgba(174, 234, 255, 0.2);
-    display: flex;
-    flex-flow: column;
-    color: #e6faff;
-    padding: 1.5em;
-  }
-
-  .overlay_window h3 {
-    margin: 0;
-    padding: 0.6em 1em;
-    font-size: 1.4em;
-    background: #1a1a1a;
-    border-radius: 0.7rem 0.7rem 0 0;
-    color: #f0f0f0;
-    text-shadow: 0 0 6px rgba(174, 234, 255, 0.5);
-  }
-
-  .overlay_window p {
-    margin: 0.7em 0 0 0;
-    line-height: 1.5em;
-    color: #f5faff;
-  }
-</style>
-`;
