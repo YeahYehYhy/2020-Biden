@@ -6129,40 +6129,46 @@ class ChartEnhancer {
   initializeReplacements() {
     this.replacements = new Map([
     ["Connally", this.createTooltip("Connally", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/9999010868-l.jpg",
+      img: "https://i.imgur.com/jFY2kq7.jpeg",
       title: "Nominee",
       name: "John Connally",
       desc: "Swamp creature, they call you."
     })],
 
     ["The Enemy", this.createTooltip("The Enemy", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/nixon-events-hero-scaled.jpg",
+      img: "https://i.imgur.com/fs3NfUn.jpeg",
       name: "The Enemy",
-      desc: "Idealists or traitors. No inbetween."
+      desc: "All the good ones are going red, like you."
     })],
 
     ["Spoilers", this.createTooltip("Spoilers", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/1972Disgust",
+      img: "https://i.imgur.com/KiZ3954.jpeg",
       name: "Independents",
       desc: "Whether they have bushy hair on their chest or their head, they're all useless."
     })],
 
     ["Brown", this.createTooltip("Brown", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/yippies-72386062.avif",
+      img: "https://i.imgur.com/2k9kBE3.jpeg",
       name: "Jerry Brown",
       desc: "Laser Pointer."
     })],
 
     ["Wallace", this.createTooltip("Wallace", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/14575_tower.rev.1374525784.jpg",
+      img: "https://i.imgur.com/Q0VaRES.jpeg",
       name: "George Wallace",
       desc: "You're from the Peanut Capital, but you fucking hate this nut."
     })],
 
     ["McCarthy/Others", this.createTooltip("McCarthy/Others", {
-      img: "https://file.garden/aPv9uE9PkXWKuNYV/14575_tower.rev.1374525784.jpg",
+      img: "https://i.imgur.com/A7BQN0I.jpeg",
       name: "Eugene McCarthy",
       desc: "Desperate for attention. Won't let this go."
+    })],
+
+    ["Dole", this.createTooltip("Dole", {
+      img: "https://i.imgur.com/oUUF6kE.jpeg",
+      name: "Bob Dole",
+      desc: "(un)happy to be here."
     })],
     ]);
   }
