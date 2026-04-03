@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12764,
         "fields": {
             "priority": 0,
-            "description": "Christ, it seems you've really underestimated the sheer scale of the opposition to your candidacy. While you've managed to cinch a narrow victory in New Hampshire against both Percy and Reagan, it seems your troubles have just started. Percy is making significant gains in the Mid-West, funded by Rockefeller's bottomless pockets, your only consolation is that Reagan seems to be on the verge of dropping out as you seem poised to dominate in North Carolina and Florida. We need to nip this little debacle in the bud before the damage done to this party is irrecoverable.",
+            "description": "Christ, it seems you've really underestimated the opposition to your candidacy. While you've managed to cinch a modest victory against Percy in New Hampshire, it seems this issue has just started. Percy is making significant gains in the Mid-West, funded by Rockefeller's bottomless pockets. His path to the nomination is completely unviable, but he's making moderate voters think twice about your candidacy. We've gotta nip this shit in the bud before we bleed too much.",
             "likelihood": 1
         }
     },
@@ -22,7 +22,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12765,
         "fields": {
             "priority": 0,
-            "description": "As the Republican primaries rage on, to your relief, the Democratic Primaries seem to be even more contested. As of right now, there is no clear front runner for the nomination. George Wallace and Mo Udall have made a significant comeback against Carter. You're still in a dead heat with Reagan and Percy, but you could get a few good jabs at the Democrats, for once.",
+            "description": "As the Republican primaries seem to be a wash in your favor, the Democratic primaries seem to be becoming more divisive than anyone expected. As of right now, there is no clear front runner for the nomination. Wallace and Udall have made a significant comeback against Carter. You're technically still in the race against Percy, but you could get a few good jabs at the Democrats, for once.",
             "likelihood": 1
         }
     },
@@ -31,7 +31,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12766,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "You're sure that you're going to win, but there's just one little issue that could end this adventure early. The economy. You helped Nixon kick the can down the road during your time as Treasury Secretary, but when ol' George was torn down, we were left to deal with the consequences of our actions. While the situation has calmed down from 1974, the economy isn't exactly pristine. Unemployment's still stuck around 7%, inflation's around that number as well. Everyone's blaming you, John. You can't keep dodging this issue.",
             "likelihood": 1
         }
     },
@@ -40,7 +40,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12767,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "We've already suffered through the blow of the fall of Saigon in June, but it seems we weren't able to clean the wound properly, because it's still stuck healing. It hasn't been a year yet, and we're still stuck suffering through the infection. Nixon's already gone and blamed everything except himself, and his approvals have taken a definitive fall since then. How are we going to navigate the aftermath of this calamity for the rest of the campaign?",
             "likelihood": 1
         }
     },
@@ -49,7 +49,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12768,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "We left Vietnam 3 years ago, yet we're still stuck in a war. A crusade that's been raging since 1971. A war against our own neighbors, our own people. Everyday, you and Nixon work tirelessly to stop the drug crisis that's been poisoning our youth and destroying their potential, and you're succeeding wildly. That's what you want people to believe, anyway. In reality, the results of fighting Public Enemy Number One has been a mixed bag. Nixon's too light on this issue, you think. You've got the perfect issue to parade around on.",
             "likelihood": 1
         }
     },
@@ -58,25 +58,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12769,
         "fields": {
             "priority": 0,
-            "description": "You're almost there, John. While the nomination is still a tossup between you and Reagan, with Percy hoping for a deadlock, but because of his decision to preemptively poach liberal Senator Richard Schweiker for his VP slot has caused both his and Percy's campaign to go into the shitter. We've gotta prevent any shock coming out of the convention, how will you deal with those two rabblerousers?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 12770,
-        "fields": {
-            "priority": 0,
-            "description": "Chaos descends upon the Democratic National Convention as Fuhrer Jerry Brown ascends from the depths of hell to seize the Democratic Nomination in a palace coup against Udall and Carter. He walks up on stage with his Himmler, George Corley Wallace of all people, to decry the folly of the corrupt establishment in Washington once more. In scenes similar to 1968, the liberals have pointlessly set them aflame to let one of their own lose to stability and order. How will you hammer the nail into the Democrat's coffin?",
-            "likelihood": 1
-        }
-    },
-    {
-        "model": "campaign_trail.question",
-        "pk": 12771,
-        "fields": {
-            "priority": 0,
-            "description": "put description here",
+            "description": "You're almost there, John. The nomination is assured. Despite the token opposition of Percy and Helms having resulted in a much more vicious primary season than expected, you're here. With those rabble-rousers having finally stopped nipping at your heels, you've been given breathing room in-between campaign seasons. With the convention coming—the question is—how will you rally the troops and get your party in order?",
             "likelihood": 1
         }
     },
@@ -85,7 +67,25 @@ campaignTrail_temp.questions_json = [
         "pk": 12772,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "To the shock of nobody but those with a screw loose, you've chosen fellow conservative Bob Dole as your running mate. As you and him stand side by side addressing the crowd of faithful Republicans, many want to hear from you, hear from him. What right does this man have to be the next Vice President of the United States, they ask. You ought to rile them up. Make sure they can't get Dole out of their heads, atleast until the Election.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 12771,
+        "fields": {
+            "priority": 0,
+            "description": "As your troubles end, it seems the enemy's troubles have only just begun. Frank Church's late entry into the race–along with a flurry of other minor candidates, has shook up what seemed to be a three-way race between Udall, Carter, and Wallace. Despite his low profile, he's widely seen as a rising star, and a possible compromise candidate when the delegates inevitably deadlock in convention. How will you beat a dead donkey?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 12770,
+        "fields": {
+            "priority": 0,
+            "description": "Chaos descends upon the Democratic National Convention as Fuhrer Jerry Brown ascends from the depths of hell to seize the Democratic Nomination in a palace coup against Udall and Carter. He walks up on stage with his Himmler—George Corley Wallace of all people—to decry the folly of the corrupt establishment in Washington once more. In scenes similar to 1968, the Democrats have immolated themselves just to let one of their own lose to stability and order. How will you hammer the nail into their coffin?",
             "likelihood": 1
         }
     },
@@ -130,7 +130,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12777,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "In the wake of the Yom Kippur war, A heavily pro-Israeli sentiment has burrowed itself into the American consciousness. The issue of the Middle East and it's unstable political dynamic has been raised. This theatre of the Middle East within the greater Cold War has been a hot button issue for a long while, with the vast majority of your party being staunchly Zionist in regards to the State of Israel. You aren't expected to make this an important issue. Your silence regarding this has raised a few eyebrows. Are you willing to share your stance?",
             "likelihood": 1
         }
     },
@@ -247,7 +247,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12790,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "The enemy is at the gates, and he's barely knocking at the door. The flames of populist fervor die down in favor of his newfound unifying tone. He really thinks you're down and out, he's already trying to lower the temperature. He preaches unity from his high horse, while you wallow in the mud. You've finally been given an opportunity to kick at his heels and bring him back down to your level. This needs to be a decisive blow, if you want any chance at turning the tides.",
             "likelihood": 1
         }
     },
@@ -256,7 +256,7 @@ campaignTrail_temp.questions_json = [
         "pk": 12791,
         "fields": {
             "priority": 0,
-            "description": "The Democrats have been hard at work trying to destroy what remains of your Presidential campaign as endless investigations and inquiries have been levied against you. If things couldn't get anything worse, they've finally found something on you. They claim you took some 10 thousand dollars from dairy lobbyists to directly influence Nixon Administration policy on federal milk price supports. Can you even bother to respond?",
+            "description": "The Democrats have been hard at work trying to destroy what remains of your Presidential campaign as they sic endless investigations and inquiries against you. If things couldn't get anything worse, they've finally found something on you. They claim you took some 10 thousand dollars from dairy lobbyists to directly influence Nixon Administration policy on federal milk price supports. Can you even bother to respond?",
             "likelihood": 1
         }
     },
@@ -269,7 +269,7 @@ campaignTrail_temp.questions_json = [
             "likelihood": 1
         }
     }
-]
+];
 
 campaignTrail_temp.answers_json = [
     {
@@ -285,7 +285,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12794,
         "fields": {
             "question": 12762,
-            "description": "Y'know, I only just became a Republican a few years ago. I really ought to hammer my loyalty to this party. I'm sure much of the party base can relate to being left behind by the Democrats. If they look through my record, they'll know i'm a conservative through and through. I have to change the base's perception of me."
+            "description": "Y'know, I only just became a Republican a few years ago. I really ought to hammer my loyalty to them. I'm sure much of the party base—particularly the South—can relate to being left behind by the Democrats. If they look through my record, they'll know i'm a conservative through and through. I oughta change perceptions."
         }
     },
     {
@@ -293,7 +293,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12795,
         "fields": {
             "question": 12762,
-            "description": "We shouldn't focus too much on the primary. What we really need is to attack the Democrats early and often. The best way to unite a cause is a common enemy. Now, I've been in politics for a while, but i've never seen a party go off the deep end like the Democrats have, nominating radical candidates like George McGovern. If you really take a look at their policies, you'll see why I left em."
+            "description": "We shouldn't focus too much on the primary. What we really need is to attack the Democrats early and often. The best way to unite a cause is a common enemy. Now, I've been in politics for a while, but i've never seen a party go off the deep end like the Democrats have, nominating radical candidates like McGovern. If you really take a look at their policies, you'll see why I left em."
         }
     },
     {
@@ -301,7 +301,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12826,
         "fields": {
             "question": 12762,
-            "description": "What we should do is make sure we can consolidate the Party establishment around me fully. Who cares if I was a Democrat before? I want to parade Nixon's endorsement around constantly. If Dick Nixon put enough trust in me to be his successor, surely the party can too?"
+            "description": "What we should do is make sure we can consolidate the Party establishment around me fully. Who gives a damn if I was a Democrat a few years ago? I want to parade Nixon's endorsement around over and over. If Nixon put enough trust in me to continue his cause, surely the party can too?"
         }
     },
     {
@@ -309,7 +309,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12840,
         "fields": {
             "question": 12764,
-            "description": "We're still the front runners here. We can have a little fight against Percy, but we need to keep this clean. Let Reagan's little star burn out, and whether or not Percy agrees to keep the rest of this primary without mudslinging will hurt him. We need to be able to wash our hands after this before the smell of shit becomes unbearable."
+            "description": "We're still the front runners here. We can have a little fight against Percy, but we need to keep this clean. Let his little star burn out, and whether or not Percy agrees to keep the rest of this primary without mudslinging will hurt him. We need to be able to wash our hands after this before the smell of shit becomes unbearable."
         }
     },
     {
@@ -317,7 +317,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12841,
         "fields": {
             "question": 12764,
-            "description": "There is only one option, I want us to take off the kiddy gloves off. Start up the attack ads. I'm not going to sit by and let them subject us to a grueling primary. The best thing we could do for party unity is to end this little kerfuffle right goddamn now, you hear me? Shut this shit down."
+            "description": "There is only one option, I want us to take off the kiddy gloves off. Start up the attack ads. I'm not going to sit by and let them subject us to this. The best thing we could do for party unity is to end this little scuffle right goddamn now, you hear me? Shut this shit down."
         }
     },
     {
@@ -325,7 +325,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12842,
         "fields": {
             "question": 12764,
-            "description": "I don't give a damn about all these goddamn primaries. I'll go wherever Morton and Cheney tell me to. What I really want is to play the long game. You know, getting those other Delegations to assure my nomination in the Convention. C'mon, I just want to prepare for the general election."
+            "description": "I don't give a damn about all these goddamn primaries. I'll go wherever Morton and Cheney tell me to. What I really want is to play the long game. You know, uniting the party.  End this shit early. Concede policy, cabinet positions, all that shit. C'mon here, I just want to prepare for the general election. I've been through this shit, back in Dallas. I don't gotta work my ass off like I did back in '60."
         }
     },
     {
@@ -333,7 +333,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12847,
         "fields": {
             "question": 12765,
-            "description": "We could use this as an opening in our own fight. Why the fuck are Reagan and Percy even running? I'm the Vice President, we could be breezing to another four years of conservative dominance, but they can't do anything but throw a hissy fit and stamp their feet like schoolboys."
+            "description": "We could use this as an opening to discredit the guys nipping at my heels. Why the fuck is Percy even running? I'm the Vice President. We could be breezing to another four years of conservatism, but they can't do anything but throw a hissy fit and stamp their feet like schoolboys."
         }
     },
     {
@@ -381,7 +381,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12861,
         "fields": {
             "question": 12825,
-            "description": "They say California is out of our reach. That the scandals have locked us out of anything but a narrow victory. I want to humiliate Brown and kill his career. Get me to San Francisco, we can make a few stops in Nevada and Arizona on our way there. We'll show them."
+            "description": "They say California is out of our reach. That the scandals have locked us out of anything but a narrow victory. I want to kill and gut that bastard. Get me to San Francisco, we can make a few stops in Nevada and Arizona on our way there. We'll show them."
         }
     },
     {
@@ -405,7 +405,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12864,
         "fields": {
             "question": 12825,
-            "description": "Get me to Kentucky, Tennessee, North Carolina, those kinda states. I'm not from that region, but we Texans have cultural similarities that we share. Those men will welcome me with open arms, it'll be a reprieve from having to go tour the big Liberal cities."
+            "description": "Get me to Kentucky, Tennessee, North Carolina, those kinda states. I'm not from that region, but we Texans have cultural similarities that we share. Those men will welcome me with open arms, it'll be a reprieve from having to go tour the big liberal cities."
         }
     },
     {
@@ -429,7 +429,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12899,
         "fields": {
             "question": 12770,
-            "description": "Are we forgetting how Jerry even got up on the stage anyway? He had to make an ardent segregationist his VP so he could rob Morris of the nomination. Not to mention how Carter and his supporters got shafted. I know that I'm not the ideal choice of some Democrats, but are they just gonna let Brown rob them of their candidate? "
+            "description": "Are we forgetting how Jerry even got up on the stage anyway? He had to make an ardent segregationist his second in command so he could use the dead corpse of Church to spring himself to the nomination. I know that I'm not the ideal choice of some Democrats, but are they just gonna let Brown take them over that easily, like a goddamn huckster?"
         }
     },
     {
@@ -445,7 +445,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12921,
         "fields": {
             "question": 12769,
-            "description": "We don't need to do anything extra here. The nomination is already locked up, Reagan and Percy already know their game is over. Send out intermediaries to wrestle support from them once we take the nomination."
+            "description": "We don't need to do anything more here, the nomination is already locked up. Reagan and Percy already know their game is over. Send out my guys to wrangle some support from them once we take the nomination. It's that simple."
         }
     },
     {
@@ -453,7 +453,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12922,
         "fields": {
             "question": 12769,
-            "description": "I don't wanna get too complacent here, "
+            "description": "I'm not gonna sit on my ass and do jack-shit. I've gotta make sure this party is ready for the general. Course, i'm gonna send out some lackeys to some of the less important figures, but get me in meetings with the top brass. Reagan, Rocky, those types. We've gotta ensure their total support."
         }
     },
     {
@@ -461,7 +461,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12923,
         "fields": {
             "question": 12769,
-            "description": "put description here"
+            "description": ""
         }
     },
     {
@@ -471,8 +471,208 @@ campaignTrail_temp.answers_json = [
             "question": 12769,
             "description": "put description here"
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12926,
+        "fields": {
+            "question": 12764,
+            "description": "Frankly, I really don't give a damn. Let them do whatever. I'm going to be the nominee. They're not serious contenders. It's all for attention."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12984,
+        "fields": {
+            "question": 12771,
+            "description": "We oughta hammer it in over and over. Order and stability. I've been hearing that so much they don't even seem like words anymore. The rest of the nation has gotta see it like that. Hammer it in their heads. The Democrats are chaotic, we ain't."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12985,
+        "fields": {
+            "question": 12771,
+            "description": "I wanna go up against the bumbling three. One of em's probably still gonna take the nomination, sure. But they've fucked themselves for the general. They're political poison. Everytime we attack one, we put more wedges in-between them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12986,
+        "fields": {
+            "question": 12771,
+            "description": "Lessen attacks on the others. I wanna dig deep into Frank's history, Find shit out about him. Destroy him. He's probably the strongest candidate we could face. Just like every other candidate, he's nothing of note. He has jack-shit on his record."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12987,
+        "fields": {
+            "question": 12771,
+            "description": "This is gonna sound real crazy, but I wanna attack some of the smaller contenders. Who's the governor of California right now? He's running for president, ain't he? He's a real nut. Just look at his policy positions, it's completely incoherent. No experience at all."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12992,
+        "fields": {
+            "question": 12766,
+            "description": "The economy's the Democrat's big issue, huh? What are their solutions? We're already seeing the end of this little crisis, just look at the charts. We're winning, and if we let the enemy have their way, we'll be drowning in debt, while inflation is still gonna jam its way up our asses."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12993,
+        "fields": {
+            "question": 12766,
+            "description": "Nixon's done all he can to combat this. Remind the voters that he managed to pull through that massive tax cut and spending reduction bill. We've already delivered relief to this crisis, without any of the bullshit the liberals want. We're doing all we can, goddamn it."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12994,
+        "fields": {
+            "question": 12766,
+            "description": "Y'know, this little avenue of attack is all they have on us. Drown them in shit. They don't even have a frontrunner yet, they won't be able to fight back. I'm keeping this issue on the backburner, and that's final. Keep dodging."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 12995,
+        "fields": {
+            "question": 12766,
+            "description": "Oh God. I don't wanna do this. I really don't want to. But we need to. Actions speak louder than words. Lift price controls on oil. Christ. Just... do it temporarily. Until the election. We need whatever good will we can get."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13000,
+        "fields": {
+            "question": 12790,
+            "description": "When he goes high, we go low. It's that simple, folks. Go after Wallace, divert resources to bite instead of curling back into a little girly ball like we were. We're dragging this shit back into the mud, whether he wants it or not. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13001,
+        "fields": {
+            "question": 12790,
+            "description": "While he sits pretty, we've gotta use this as breathing room. He won't attack? Thank God. We need all the time to regain our credibility. I wanna double up the defense. The media won't like it if we try to drag this race back into the mud."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13002,
+        "fields": {
+            "question": 12790,
+            "description": "Nixon's gone, remember? I'm the goddamn president, and I wanna make sure every son of a bitch on American soil knows this is my territory. I wanna shake some foreign hands. Chinese hands. Get me to Peking. I'm sure me and that new chairman of theirs can buddy up. We've found ourselves in... similar positions."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13007,
+        "fields": {
+            "question": 12772,
+            "description": "I think Dole should be the one to introduce himself. It'll make him seem bigger and tougher, not just one of my lackeys. Of course, that's the whole reason he's here, but they don't need to know that, cmon."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13008,
+        "fields": {
+            "question": 12772,
+            "description": "Goddamn it, just fucking look at him. Look at his record. He's a a god-fearing man just like everyone else in this hall. A committed conservative. Just look at his record. The Reaganites oughta eat this shit up."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13009,
+        "fields": {
+            "question": 12772,
+            "description": "New answer option"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13010,
+        "fields": {
+            "question": 12772,
+            "description": "New answer option"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13011,
+        "fields": {
+            "question": 12767,
+            "description": "Here's an idea. I reckon that the best outcome we'll get out of this whole debacle is if we just shut the fuck up about Vietnam. We'll leave that shit in the past. We can't pin this on the Democrats. I'm John Connally. My past limits me, here."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13012,
+        "fields": {
+            "question": 12767,
+            "description": ""
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13014,
+        "fields": {
+            "question": 12767,
+            "description": "New answer option"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13015,
+        "fields": {
+            "question": 12768,
+            "description": "Well, I... err.. I believe, firmly, that rehabilitation is the best course. Jailing some poor long haired sap for smoking dope isn't the best way of going about this, y'know? We've gotta treat them, and we've gotta root this out from its core."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13016,
+        "fields": {
+            "question": 12768,
+            "description": "I don't wanna undermine Dick's stance here, but he isn't going nearly as far as he could. Rehabilitation is a real nice idea and all, but it's bullshit. Jail the bastards, rehabilitate them how they deserve. Don't say that out loud, though. Filter what I just said so the public i'll eat it up."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13017,
+        "fields": {
+            "question": 12768,
+            "description": "Look. I think Nixon's stance is very clear here. We're already succeeding in weeding out the dealers and users. We punish, we rehabilitate. We're winning. If it ain't broke, don't fix it. We'll keep chugging along."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13023,
+        "fields": {
+            "question": 12767,
+            "description": "New answer option"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13024,
+        "fields": {
+            "question": 12777,
+            "description": "I'm not a goddamn yellow belly bastard. I won't stay silent on this. I refuse to let myself be chained to public opinion. I'm gonna go out there and make sure every American knows exactly where I stand, you hear that? How we're really gonna get peace in the region. It's what they need to hear."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 13025,
+        "fields": {
+            "question": 12777,
+            "description": "N-now, let's hold our horses, here. I'm not gonna say anything rash. We oughta just shut up on this issue. No point in saying shit. The voters have already made up their minds."
+        }
     }
-]
+];
 
 campaignTrail_temp.states_json = [
     {
@@ -1138,7 +1338,7 @@ campaignTrail_temp.states_json = [
             "election": 10
         }
     }
-]
+];
 
 campaignTrail_temp.issues_json = [
     {
@@ -1203,7 +1403,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_4": 0,
             "stance_5": "Could Be Better",
             "stance_desc_5": 0,
-            "stance_6": "Udall For Me!",
+            "stance_6": "Kennedy For Me!",
             "stance_desc_6": 0,
             "stance_7": "No Better Than Adolf Hitler",
             "stance_desc_7": 0,
@@ -1233,7 +1433,7 @@ campaignTrail_temp.issues_json = [
             "election": 10
         }
     }
-]
+];
 
 campaignTrail_temp.state_issue_score_json = [
     {
@@ -3276,7 +3476,7 @@ campaignTrail_temp.state_issue_score_json = [
             "weight": 1
         }
     }
-]
+];
 
 campaignTrail_temp.candidate_issue_score_json = [
     {
@@ -3350,8 +3550,44 @@ campaignTrail_temp.candidate_issue_score_json = [
             "issue": 36,
             "issue_score": -0.0001
         }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 12980,
+        "fields": {
+            "candidate": 103,
+            "issue": 33,
+            "issue_score": 0
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 12981,
+        "fields": {
+            "candidate": 103,
+            "issue": 34,
+            "issue_score": 0
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 12982,
+        "fields": {
+            "candidate": 103,
+            "issue": 35,
+            "issue_score": 0
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_issue_score",
+        "pk": 12983,
+        "fields": {
+            "candidate": 103,
+            "issue": 36,
+            "issue_score": 0
+        }
     }
-]
+];
 
 campaignTrail_temp.running_mate_issue_score_json = [
     {
@@ -3390,7 +3626,7 @@ campaignTrail_temp.running_mate_issue_score_json = [
             "issue_score": 0
         }
     }
-]
+];
 
 campaignTrail_temp.candidate_state_multiplier_json = [
     {
@@ -4310,8 +4546,467 @@ campaignTrail_temp.candidate_state_multiplier_json = [
             "state": 282,
             "state_multiplier": 1.65
         }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12929,
+        "fields": {
+            "candidate": 103,
+            "state": 232,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12930,
+        "fields": {
+            "candidate": 103,
+            "state": 233,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12931,
+        "fields": {
+            "candidate": 103,
+            "state": 234,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12932,
+        "fields": {
+            "candidate": 103,
+            "state": 235,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12933,
+        "fields": {
+            "candidate": 103,
+            "state": 236,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12934,
+        "fields": {
+            "candidate": 103,
+            "state": 237,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12935,
+        "fields": {
+            "candidate": 103,
+            "state": 238,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12936,
+        "fields": {
+            "candidate": 103,
+            "state": 239,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12937,
+        "fields": {
+            "candidate": 103,
+            "state": 240,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12938,
+        "fields": {
+            "candidate": 103,
+            "state": 241,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12939,
+        "fields": {
+            "candidate": 103,
+            "state": 242,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12940,
+        "fields": {
+            "candidate": 103,
+            "state": 243,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12941,
+        "fields": {
+            "candidate": 103,
+            "state": 244,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12942,
+        "fields": {
+            "candidate": 103,
+            "state": 245,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12943,
+        "fields": {
+            "candidate": 103,
+            "state": 246,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12944,
+        "fields": {
+            "candidate": 103,
+            "state": 247,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12945,
+        "fields": {
+            "candidate": 103,
+            "state": 248,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12946,
+        "fields": {
+            "candidate": 103,
+            "state": 249,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12947,
+        "fields": {
+            "candidate": 103,
+            "state": 250,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12948,
+        "fields": {
+            "candidate": 103,
+            "state": 251,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12949,
+        "fields": {
+            "candidate": 103,
+            "state": 252,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12950,
+        "fields": {
+            "candidate": 103,
+            "state": 253,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12951,
+        "fields": {
+            "candidate": 103,
+            "state": 254,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12952,
+        "fields": {
+            "candidate": 103,
+            "state": 255,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12953,
+        "fields": {
+            "candidate": 103,
+            "state": 256,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12954,
+        "fields": {
+            "candidate": 103,
+            "state": 257,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12955,
+        "fields": {
+            "candidate": 103,
+            "state": 258,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12956,
+        "fields": {
+            "candidate": 103,
+            "state": 259,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12957,
+        "fields": {
+            "candidate": 103,
+            "state": 260,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12958,
+        "fields": {
+            "candidate": 103,
+            "state": 261,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12959,
+        "fields": {
+            "candidate": 103,
+            "state": 262,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12960,
+        "fields": {
+            "candidate": 103,
+            "state": 263,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12961,
+        "fields": {
+            "candidate": 103,
+            "state": 264,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12962,
+        "fields": {
+            "candidate": 103,
+            "state": 265,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12963,
+        "fields": {
+            "candidate": 103,
+            "state": 266,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12964,
+        "fields": {
+            "candidate": 103,
+            "state": 267,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12965,
+        "fields": {
+            "candidate": 103,
+            "state": 268,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12966,
+        "fields": {
+            "candidate": 103,
+            "state": 269,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12967,
+        "fields": {
+            "candidate": 103,
+            "state": 270,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12968,
+        "fields": {
+            "candidate": 103,
+            "state": 271,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12969,
+        "fields": {
+            "candidate": 103,
+            "state": 272,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12970,
+        "fields": {
+            "candidate": 103,
+            "state": 273,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12971,
+        "fields": {
+            "candidate": 103,
+            "state": 274,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12972,
+        "fields": {
+            "candidate": 103,
+            "state": 275,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12973,
+        "fields": {
+            "candidate": 103,
+            "state": 276,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12974,
+        "fields": {
+            "candidate": 103,
+            "state": 277,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12975,
+        "fields": {
+            "candidate": 103,
+            "state": 278,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12976,
+        "fields": {
+            "candidate": 103,
+            "state": 279,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12977,
+        "fields": {
+            "candidate": 103,
+            "state": 280,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12978,
+        "fields": {
+            "candidate": 103,
+            "state": 281,
+            "state_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.candidate_state_multiplier",
+        "pk": 12979,
+        "fields": {
+            "candidate": 103,
+            "state": 282,
+            "state_multiplier": 0.07
+        }
     }
-]
+];
 
 campaignTrail_temp.answer_score_global_json = [
     {
@@ -4474,9 +5169,9 @@ campaignTrail_temp.answer_score_global_json = [
             "global_multiplier": -0.333
         }
     }
-]
+];
 
-campaignTrail_temp.answer_score_issue_json = []
+campaignTrail_temp.answer_score_issue_json = [];
 
 campaignTrail_temp.answer_score_state_json = [
     {
@@ -4886,7 +5581,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state_multiplier": -0.522
         }
     }
-]
+];
 
 campaignTrail_temp.answer_feedback_json = [
     {
@@ -4895,7 +5590,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12795,
             "candidate": 92,
-            "answer_feedback": "Not even trying to buck the Republican electorate's view of you as a political chameleon with no loyalties allows for men like Ronald Reagan to paint an caricature of you to those Middle American voters that isn't very pleasing. This whole debacle has devolved into a vicious mudslinging fest that you could've never imagined."
+            "answer_feedback": "You're trying to buck the Republican electorate's view of you as a political chameleon with no loyalties. You're not succeeding. Bush, that fucking liberal, makes snide remarks about you behind your back. You hate that son of a bitch."
         }
     },
     {
@@ -4904,7 +5599,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12794,
             "candidate": 92,
-            "answer_feedback": "Trying to reprogram the arch-conservative crowd back into your corner is a good idea on paper, but this only makes moderates in the party queasy at the idea of nominating you. You aren't even doing a great job at courting the more right-wing into your corner. Jesse Helms denounces you and pledges to support anyone who challenges you. Doesn't he realize he was a Democrat just 6 years ago? Dumbass."
+            "answer_feedback": "Trying to reprogram the arch-conservative crowd back into your corner is a good idea on paper, but this only makes moderates in the party queasy at the idea of nominating you. You're doing an okay job at courting the more right-wing into your corner, though. You get praise from the likes of Jesse Helms. You like him. He reminds you of yourself."
         }
     },
     {
@@ -4913,7 +5608,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12826,
             "candidate": 92,
-            "answer_feedback": "Nixon's on the trail one last time trying to plead voters to stand by him and his vision. This would've worked like a charm just 4 years ago, but as the economy falls further, the party slips through his fingers. At least the establishment seems ready to follow you to the ends of the Earth, you think."
+            "answer_feedback": "Nixon's on the trail one last time trying to plead voters to stand by him and his vision. This would've worked like a charm just 4 years ago, but as the economy falls further, the party slips through his fingers. At least Nixon seems ready to follow you to the ends of the Earth, you think."
         }
     },
     {
@@ -4922,7 +5617,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12840,
             "candidate": 92,
-            "answer_feedback": "Percy and Reagan pledge to keep this little contest clean, for now. You have a little less to worry about coming into the general, but reaching that point seems increasingly less likely. You win North Carolina as expected, despite Helm's tantrum, but Reagan's shock victory in Florida manages to keep him in contention. Let's hope that this scuffle won't hurt you too much."
+            "answer_feedback": "Percy pledges to keep this little contest clean, for now. You have a little less to worry about coming into the general, but reaching that point seems increasingly less likely. You win sweep the South to nobody's surprise. He's gonna end up dropping out any day now. Probably."
         }
     },
     {
@@ -4931,7 +5626,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12841,
             "candidate": 92,
-            "answer_feedback": "Your penchant to take the gloves off and turn this primary into a mud fight has led to Percy and Reagan focusing on taking you down. Your disregard for party unity has harmed your standing in the party, and Reagan's victory in Florida has assured that this primary isn't going to be over as quickly as you'd like. Congrats."
+            "answer_feedback": "Your penchant to take the gloves off and turn this primary into a mud fight has led to Percy trying to turn his little publicity stunt into full fisted attempts to harm you. Your disregard for party unity has fractured the party even more. There's no way he manages to keep this little facade going past the next few primaries, but you're still a fucking idiot."
         }
     },
     {
@@ -4940,7 +5635,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12842,
             "candidate": 92,
-            "answer_feedback": "Your staffers are dismayed by your dismissive attitude to the nomination fight. Whenever you go out on the stump, you're visibly disinterested and stiff. Whatever happened to the bombastic campaigner you once were? The man who crawled his way to being the Governor of the Lone Star state? Reagan and Percy make the nomination less assured day by day, and you do nothing."
+            "answer_feedback": "Your opposition is shocked at your promises, but there's no way, in their eyes, you manage to keep them. Your staffers are dismayed by your dismissive attitude. Whenever you go out on the stump, you're visibly disinterested and stiff. Whatever happened to the bombastic campaigner you once were? The man who crawled his way to being the Governor of the Lone Star state? You've changed, John."
         }
     },
     {
@@ -4949,7 +5644,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12850,
             "candidate": 92,
-            "answer_feedback": "It isn't the 60s anymore, John. Bringing up Kennedy won't do you any favors unless you're one yourself. Trying to appeal to name recognition doesn't do you any favors, the uniquely populist mood of this election makes these attacks do the opposite of what you intend."
+            "answer_feedback": "It isn't the 60s anymore, John. Bringing up the Kennedy name won't do you any favors unless you're a senator from Massachusetts. Trying to appeal to name recognition doesn't do you any favors, the uniquely populist mood of this election makes these attacks do the opposite of what you intend."
         }
     },
     {
@@ -4958,7 +5653,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12848,
             "candidate": 92,
-            "answer_feedback": "Morton is hesitant to divert funds to attack the Democrats while you're fighting for your life in the primaries, but when he acquiesces, you don't notice much shifts in the polls. Whatever gains you made were minimal, nothing major happened, and your attacks make little splash in the media. What a fucking waste."
+            "answer_feedback": "Rhodes is hesitant to divert funds to attack them this early, but when he acquiesces, you don't notice much shifts in the polls. Whatever gains you made were minimal, nothing major happened, and your attacks make little splash in the media. At least you're solidifying the base."
         }
     },
     {
@@ -4967,7 +5662,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12854,
             "candidate": 92,
-            "answer_feedback": "The media are fucking vultures. They'll rip you apart for a good story, every god-fearing American knows this. Even if you lose every drone who tunes into the television, you'll keep those red-blooded good old boys from True America. They'll probably be even more loyal to you. You can never trust a journalist."
+            "answer_feedback": "The media are fucking vultures. They'll rip you apart for a good story, every god-fearing American knows this. Even if you lose every drone who tunes into the television, you'll keep those red-blooded good old boys from true America. They'll probably be even more loyal to you. You can never trust a journalist."
         }
     },
     {
@@ -4985,7 +5680,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12793,
             "candidate": 92,
-            "answer_feedback": "They twist what little words you have to say to fit their narratives. The people eat it up like moths to a flame. They want a villain in their lives, when you have no more to give them, they turn you into one."
+            "answer_feedback": "They twist what little words you have to say to fit their narratives. The people eat it up like moths to a flame. They want a villain in their lives, when you have no more to give them, they turn you into one. The polls fall. Shocking."
         }
     },
     {
@@ -5003,7 +5698,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12862,
             "candidate": 92,
-            "answer_feedback": "Texans are much more receptive to your message other than the occasional confrontational journalist rat trying to suckle a scandal from your mouth. The winter storms around Dallas don't help your mood. You try to smile for the cameras as you'd want nothing more but to let the snow envelop you to get away from them."
+            "answer_feedback": "Texans are much more receptive to your message other than the occasional confrontational journalist trying to suckle a scandal from your mouth. The winter storms around Dallas don't help your mood. You try to smile for the cameras even as you'd want nothing more but to let the snow envelop you to get away from them."
         }
     },
     {
@@ -5012,7 +5707,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12863,
             "candidate": 92,
-            "answer_feedback": "The trip goes smoothly. But you notice Dole being much colder to you than usual. You barely speak past basic pleasantries on the trip, and he seems disengaged when he gives a basic defense of your actions regarding Dick. You think you can hear him mutter something about getting the hell out of here over the telephone to Elizabeth."
+            "answer_feedback": "The trip goes smoothly. But you notice Dole being much colder to you than usual. You barely speak past basic pleasantries on the trip, and he seems disengaged when he gives a basic defense of your actions regarding Dick on the stump. You think you can hear him mutter something about getting the hell out of here over the telephone to Elizabeth."
         }
     },
     {
@@ -5030,7 +5725,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12849,
             "candidate": 92,
-            "answer_feedback": "Your refusal to mount an offense against the Democrats this early into the campaign allows for you to focus efforts to more important matters elsewhere, but allows Reagan an opening to call you a limp-wristed RINO, which what he was saying before, so it doesn't really matter."
+            "answer_feedback": "Your refusal to mount an offense against the Democrats this early into the campaign allows for you to focus efforts on more important matters elsewhere.  A few fringe far righters call you a limp-wristed RINO, but they were already doing that."
         }
     },
     {
@@ -5039,7 +5734,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12847,
             "candidate": 92,
-            "answer_feedback": "You're completely right about them, you know. They're running vanity campaigns solely for their own little goals, but it doesn't matter. You make little gains by pointing this out. When you crush them in the Convention, you'll make sure that they'll never get a piece of the Presidential pie. You'll stamp out their pathetic little careers."
+            "answer_feedback": "You're completely right about him, you know. He's running a vanity campaign solely for his own little goal, but it doesn't matter. You make little gains by pointing this out. When you crush him, you'll make sure that he'll never get a piece of the Presidential pie. You'll stamp out his pathetic little career."
         }
     },
     {
@@ -5048,7 +5743,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12897,
             "candidate": 92,
-            "answer_feedback": "Reagan's old lackey in the State Department has made a monumental rise to the Democratic Nomination, and you can't wait to kick at his flagging campaign's heels as you race to the finish line. You're sure this election is the nail in the coffin for the Liberals, two landslides in a row will cement Republican dominance."
+            "answer_feedback": "Reagan's old lackey in the State Department has made a monumental rise to the Democratic Nomination, and you can't wait to kick at his limping campaign's heels as you race to the finish line. He's only here because he stole the nomination from a dead man, yet his candidacy seems even more lifeless."
         }
     },
     {
@@ -5057,7 +5752,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12898,
             "candidate": 92,
-            "answer_feedback": "Given your record, invoking King's name is bold and earns you significant denouncement from Black leaders across the South. This is not to say that this isn't working, however. You and Nixon laugh about having to face Wallace once more in the Oval Office. The mood around the White House is much brighter, now that your victory is assured. "
+            "answer_feedback": "Given your record, invoking King's name is very, very bold and earns you denouncement from Black leaders across the South. This is not to say that this isn't working, quite the opposite, in fact. You and Nixon laugh about having to face Wallace once more. The mood around the White House is much brighter, nowadays. The assurance of victory will do that."
         }
     },
     {
@@ -5066,7 +5761,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12899,
             "candidate": 92,
-            "answer_feedback": "It's very obvious to anyone paying attention as to what you're doing. But to the disillusioned in the DNC convention hall, and those who protest outside, your words ring true within their minds. The liberals disavow Jerry's stealing of the nomination and decide to stay home, and the Carterites' commitment to their candidate falter."
+            "answer_feedback": "It's very obvious to anyone paying attention as to what you're doing. But to the disillusioned in the DNC convention hall, and those who protest outside, your words ring true within their minds. You couldn't be more different than those radicals, yet it's almost admirable how they operate, like brainless unkempt meat shields running at the law. Almost."
         }
     },
     {
@@ -5077,64 +5772,216 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 92,
             "answer_feedback": "The party's credibility has already been dragged out back and shot. Whatever useless words come out of a Senator, Congressman, or one of their lackey's mouths does nothing to dispel the rumors. If anything, your silence confirms what they've already made up in their heads."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12927,
+        "fields": {
+            "answer": 12926,
+            "candidate": 92,
+            "answer_feedback": "You grab another cookie from the cookie jar. Literally. You've been sitting around the White House fire for 4 hours doing nothing but eating like a fatass. How riveting. You're just like Johnson. Maybe Nixon can join you later when he wants to go pretend to be all philosophical and sentimental or whatever the word is."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12988,
+        "fields": {
+            "answer": 12987,
+            "candidate": 92,
+            "answer_feedback": "Very little people seem to care about Brown. Even fewer know his name, and he's just a western Jimmy Carter to most who do. This attacks don't have any effect, but you're inadvertently promoting him among Democrats everytime you say his name. This could.. wait. Holy shit. Read this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12989,
+        "fields": {
+            "answer": 12986,
+            "candidate": 92,
+            "answer_feedback": "Jesus, John. We've done everything to fuck him over. Wiretaps, spies. We've looked through every record with his name on it, and we can't find shit. He's squeaky clean. He knows something's up. He's been upping attacks on the dirty laundry of our intelligence servic- Oh. Holy shit. Read this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12990,
+        "fields": {
+            "answer": 12985,
+            "candidate": 92,
+            "answer_feedback": "This is a safe strategy. Barring any tragic event, it's unlikely for Church, with Brown still nipping at his heels, to seize the nomination. You're successfully dividing your opposition, and you make good gains wedging yourself as- Oh shit. Nevermind. Read this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12991,
+        "fields": {
+            "answer": 12984,
+            "candidate": 92,
+            "answer_feedback": "Buzzword, buzzword, buzzword. Order. Stability. Law. Chaos. You find yourself saying those words more than you talk to your kids, which isn't a huge feat. There's not really much to gain saying this that already hasn't been gai- Oh. Holy shit. Read this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12996,
+        "fields": {
+            "answer": 12995,
+            "candidate": 92,
+            "answer_feedback": "Nixon, although a bit hesitant, eventually acquiesces. You've angered your big oil donors with this move, and you've betrayed another one of your beliefs. You've pissed off a hell of a lot of people, but Americans notice their energy bills going down. Was it worth it?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12997,
+        "fields": {
+            "answer": 12994,
+            "candidate": 92,
+            "answer_feedback": "Energy costs stay up. Inflation stays up. Unemployment stays up. Recovery is coming slowly, and you're not sure if it'll come before the election, yet you keep attacking. Americans might be blinded for just a moment, but when they turn off their screens, they're still jobless bums."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12998,
+        "fields": {
+            "answer": 12992,
+            "candidate": 92,
+            "answer_feedback": "When in doubt, point to the other guy. The American voter likes that they get to pay less in taxes, but he certainly doesn't like that gas prices have more than doubled in less than one second term. Maybe this could stem the bleeding, just a little bit?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 12999,
+        "fields": {
+            "answer": 12993,
+            "candidate": 92,
+            "answer_feedback": "You know what the American public loves more than welfare? Tax cuts. Lots and lots of tax cuts. They'll gladly take less taxes in exchange for their welfare spending. Bringing up Nixon's accomplishment is likely to blunt any attacks on you, even if it wasn't as successful in stemming the economic bleeding than anticipated."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13004,
+        "fields": {
+            "answer": 13002,
+            "candidate": 92,
+            "answer_feedback": "Returning to China so soon? You manage to get in a short visit back to Peking, but if anything, this only fans the flames of your association with Dick. Last year, nobody gave a shit when Nixon returned to China, but they sure do care now. And not in a good way."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13005,
+        "fields": {
+            "answer": 13000,
+            "candidate": 92,
+            "answer_feedback": "Attack, attack, attack. It's all you do nowadays. Brown barely seems fazed as he continues his holy crusade against you, his legions following close behind. Wallace waddles along too, his Achilles heel. You can't tell if this is working, but you sure do pray it is."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13006,
+        "fields": {
+            "answer": 13001,
+            "candidate": 92,
+            "answer_feedback": "For a moment, the race finally quiets down. Both of your campaigns slow with the negativity, and you're given significant breathing room to recuperate. This little October truce doesn't last long, though. You two end up going back to trading blows by November, with nothing having shifted. What a waste."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13019,
+        "fields": {
+            "answer": 13015,
+            "candidate": 92,
+            "answer_feedback": "Really, John? Are you Humphrey? Nobody gives a damn about root causes unless it's about guns. You might as well just go in and piss in the water coolers at the RNC, with how the base is reacting to this statement. Maybe when you face The Happy Warrior in '80, you'll win over the long hairs with this stance."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13020,
+        "fields": {
+            "answer": 13016,
+            "candidate": 92,
+            "answer_feedback": "Okay, sir. You've certainly fired up the base with this good, conservative answer. The liberals might bitch and moan about how draconian your rhetoric is, but who cares? You're John Connally, and they're not. Who exactly is the future President here? The polls shift to your favor even more."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13021,
+        "fields": {
+            "answer": 13017,
+            "candidate": 92,
+            "answer_feedback": "Nixon certainly appreciates your loyalty. Maybe you'll be allowed to give him some thankful head pats? No? Wishful thinking. Nobody takes much note of your stance on this. It's to be expected, after all. The public seems content with Dick's handling of this war, unlike in Vietnam."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13022,
+        "fields": {
+            "answer": 13011,
+            "candidate": 92,
+            "answer_feedback": "You're right that your previous status as Johnson's protege constricts what you can say about this shitshow, but that isn't to say that staying silent is the best option. You can't just ignore an event of this scale for the rest of the campaign, John."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13026,
+        "fields": {
+            "answer": 13025,
+            "candidate": 92,
+            "answer_feedback": "Enter feedback text here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 13027,
+        "fields": {
+            "answer": 13024,
+            "candidate": 92,
+            "answer_feedback": "You lay it all out. Pre-1967 borders. A divided Jerusalem. Palestinian self-determination. Jewish-Americans and Jewish lobbying groups turn to Brown. You get a nasty voice message from Bush the next day, and Dole seems to be avoiding you. You've pissed off a lotta folks with this. You know you're right, though."
+        }
     }
-]
+];
 
 campaignTrail_temp.candidate_image_url = "https://i.imgur.com/piUlCkb.png";
-campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/fLSqBPx.jpeg";
+campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/6xOU49O.png";
 campaignTrail_temp.candidate_last_name = "Connally";
-campaignTrail_temp.running_mate_last_name = "Rumsfeld";
+campaignTrail_temp.running_mate_last_name = "Dole";
 
+//#startcode
 
+cyoAdventure = function (a) {
+    const ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1];
 
-campaignTrail_temp.jet_data = [{
-    "banner_enabled": true,
-    "banner_data": {
-        "canName": "Connally",
-        "runName": "Rumsfeld",
-        "runImage": "https://i.imgur.com/fLSqBPx.jpeg",
-        "canImage": "https://i.imgur.com/piUlCkb.png"
-    },
-    "nicknames": {
-        "91": "Udall",
-        "92": "Connally",
-        "93": "Hospers"
-    },
-    "cyoa_enabled": false,
-    "cyoa_data": {},
-    "endings_enabled": false,
-    "ending_data": {}
+    // [JETS_CYOA_VARIABLE_EFFECTS_START]
+    e.noCounter = campaignTrail_temp.player_answers.length;
+    // [JETS_CYOA_VARIABLE_EFFECTS_END]
+    e.noCounter = campaignTrail_temp.player_answers.length;
+
+    // Branching logic
+    if (ans == 12793) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(12762);
+    }
 }
-]
 
-// Tooltips
 function getTooltips(str) {
     let matches = [];
 
     tooltipList.forEach((tooltip, index) => {
-        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
-       let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
 
+       let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
 
         let match;
         while ((match = regex.exec(str)) !== null) {
             matches.push({
-                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
-                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
+                start: match.index + (match[0].startsWith('“') ? 1 : 0),
+                end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0),
                 tooltipIndex: index
             });
         }
     });
 
-    // Sort by starting position; if two start at the same position, longer match comes first
     matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
 
-    // Filter out overlaps
     for (let i = 0; i < matches.length - 1; ) {
         if (matches[i + 1].start < matches[i].end) {
-            matches.splice(i + 1, 1); // Remove the next match since it overlaps
+            matches.splice(i + 1, 1);
         } else {
-            i++; // Move to next match
+            i++;
         }
     }
 
@@ -5152,7 +5999,7 @@ function applyTooltips(str) {
         lastIndex = match.end;
     });
 
-    result += str.slice(lastIndex); // Add the remainder of the original string
+    result += str.slice(lastIndex);
     return result;
 }
 
@@ -5161,7 +6008,7 @@ function applyTooltipsToObject(obj) {
         if (typeof obj[key] === 'string') {
             obj[key] = applyTooltips(obj[key]);
         } else if (typeof obj[key] === 'object') {
-            applyTooltipsToObject(obj[key]); // Recursive call
+            applyTooltipsToObject(obj[key]);
         }
     }
 }
@@ -5170,3 +6017,50 @@ applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 
 campaignTrail_temp.multiple_endings=true
+//#endcode
+
+campaignTrail_temp.jet_data = [{
+    "banner_enabled": true,
+    "banner_data": {
+        "canName": "Connally",
+        "runName": "Dole",
+        "runImage": "https://i.imgur.com/6xOU49O.png",
+        "canImage": "https://i.imgur.com/piUlCkb.png"
+    },
+    "nicknames": {
+        "91": "Dem",
+        "92": "Connally",
+        "93": "Hospers",
+        "103": "McCarthy"
+    },
+    "cyoa_enabled": true,
+    "cyoa_data": {},
+    "endings_enabled": false,
+    "ending_data": {
+        "1774977517861": {
+            "id": 1774977517861,
+            "variable": "0",
+            "operator": ">",
+            "amount": 0,
+            "endingImage": "",
+            "endingText": "Put ending text here, you can and should use <p>HTML tags</p>!"
+        }
+    },
+    "mapping_data": {},
+    "cyoa_variables": {
+        "1775234462607": {
+            "id": 1775234462607,
+            "name": "variable1",
+            "defaultValue": 0
+        }
+    },
+    "cyoa_variable_effects": {},
+    "cyoa_question_swaps": {},
+    "cyoa_answer_swaps": {},
+    "mapping_enabled": false,
+    "player_candidate": 92,
+    "cyoa_campaign_data_enabled": false,
+    "cyoa_campaign_data_stats": {}
+}
+]
+
