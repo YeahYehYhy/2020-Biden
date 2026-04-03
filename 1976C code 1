@@ -1156,14 +1156,3 @@ e.ElectionPopup = "Make a prayer, John."
 e.WinPopup = "Thank fuck."
 e.LosePopup = "Fuck."
 e.SelAnsContText = "Get your head in the game, you need to do something."
-
-document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
-
-const favican = document.createElement("link");
-favican.rel = "icon";
-favican.type = "png";
-favican.href = "https://i.imgur.com/zUGKrED.png";
-
-document.head.appendChild(favican);
-
-// Advisor feedback animation
