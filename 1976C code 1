@@ -193,7 +193,7 @@ jet_data = {
 }
 
     HistHexcolour=["#1072a1","#c23636"];
-    HistName=["Mo Udall","John Connally"];
+    HistName=["Jerry Brwon","John Connally"];
     HistEV=[367,171];
     HistPV=["42,182,882","36,906,578"];
     HistPVP=["53.7%","45.3%"];
@@ -264,23 +264,25 @@ function addDynamicCSS() {
     var css = `
 
         .inner_window_question h3 .mytooltip{
-            background-color: #d89393;
         }
 
         .mytooltip {
             position: relative;
             display: inline-block;
+          font-weight: bold;
+          text-decoration: underline;
+          font-size: 1em;
             cursor: pointer;
-            border-radius: 5px;
-            background-color: #d89393;
+            border-radius: 7px;
+          transition: text-shadow 0.3s ease, color 0.3s ease;
         }
 
         .mytooltip .mytooltiptext {
             width: 150px;
-            background-color: #d89393;
-            color: black;
+            background-color: #5d0012;
+            color: white;
             text-align: center;
-            border-radius: 6px;
+            border-radius: 7px;
             padding: 10px;
             position: absolute;
             z-index: 99; 
@@ -288,10 +290,10 @@ function addDynamicCSS() {
             left: 20%;
             margin-left: -90px;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: opacity 0.6s;
             border: 1px solid black;
             pointer-events: none;
-            font-size: 13px !important;
+            font-size: 16x !important;
             line-height: 1.5em !important;
             font-weight: normal !important;
             font-style: normal !important;
@@ -306,6 +308,7 @@ function addDynamicCSS() {
             opacity: 1;
             transition-delay: 0.5s;
         }
+
 
         .inner_window_w_desc {
             border-style: none;
@@ -525,7 +528,7 @@ tooltipList = [
     {searchString: "Look at this.", explanationText: "<img src=https://i.imgur.com/xaH8Q1M.png>"},
     {searchString: "Kennedy", explanationText: "<img src=https://i.imgur.com/m39tJQR.jpeg>Splat."},
     {searchString: "Saigon", explanationText: "<img src=https://i.imgur.com/Zw81qjK.jpeg>Less weight on this country's back."},
-    {searchString: "price controls on oil", explanationText: "<img src=https://i.imgur.com/UC9NBMy.jpeg>"},
+    {searchString: "that energy bill", explanationText: "<img src=https://i.imgur.com/UC9NBMy.jpeg>"},
     {searchString: "Thompson", explanationText: "<img src=https://i.imgur.com/XybVoHV.jpeg>Mouth never empty. Won't take that cigarette out."},
     {searchString: "George Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
     {searchString: "Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
@@ -535,6 +538,7 @@ tooltipList = [
     {searchString: "Percy", explanationText: "<img src=https://i.imgur.com/0WF1NK7.jpeg>Why is he running?"},
     {searchString: "Ronald Reagan", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>Wish he'd stop the cowboy schtick."},
     {searchString: "Reagan", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>Wish he'd stop the cowboy schtick."},
+    {searchString: "Gipper", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>Wish he'd stop the cowboy schtick."},
     {searchString: "Reaganite", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>His people, my people."},
     {searchString: "Reaganites", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>His people, my people."},
     {searchString: "Cheney", explanationText: "<img src=https://i.imgur.com/TwEXxIH.jpeg>Presidential."},
@@ -561,7 +565,34 @@ tooltipList = [
     {searchString: "Haldeman", explanationText: "<img src=https://i.imgur.com/wOqWQDA.jpeg>Needs a better haircut."},
     {searchString: "Erlichman", explanationText: "<img src=https://i.imgur.com/FchqkOh.jpeg>Not the real McCoy."},
     {searchString: "Nellie", explanationText: "<img src=https://i.imgur.com/XXWtHji.jpeg>President of these United States."},
-    {searchString: "Dr. King", explanationText: "<https://i.imgur.com/aIzvNeO.jpeg>Almost 8 years of peace and quiet."},
+    {searchString: "Dr. King", explanationText: "<img src=https://i.imgur.com/aIzvNeO.jpeg>Almost 8 years of peace and quiet."},
+    {searchString: "Rocky", explanationText: "<img src=https://i.imgur.com/kkByHwo.gif>As respectable as a Yankee can be."},
+    {searchString: "Nelson", explanationText: "<img src=https://i.imgur.com/kkByHwo.gif>As respectable as a Yankee can be."},
+    {searchString: "Rockefeller", explanationText: "<img src=https://i.imgur.com/kkByHwo.gif>As respectable as a Yankee can be."},
+    {searchString: "Jack", explanationText: "<img src=https://i.imgur.com/MY8v604.jpeg>"},
+    {searchString: "she's dressed in a blood red robe.", explanationText: "<img src=https://i.imgur.com/wc2dPyO.jpeg>"},
+    {searchString: "Church", explanationText: "<img src=https://i.imgur.com/wc2dPyO.jpeg>"},
+    {searchString: "Frank", explanationText: "<img src=https://i.imgur.com/wc2dPyO.jpeg>"},
+    {searchString: "Frank Church", explanationText: "<img src=https://i.imgur.com/wc2dPyO.jpeg>"},
+    {searchString: "Rummy", explanationText: "<img src=https://i.imgur.com/BuLYR9I.jpeg>Slick."},
+    {searchString: "Rumsfeld", explanationText: "<img src=https://i.imgur.com/BuLYR9I.jpeg>Slick."},
+    {searchString: "Donald", explanationText: "<img src=https://i.imgur.com/BuLYR9I.jpeg>Slick."},
+    {searchString: "Jaffe", explanationText: "<img src=https://i.imgur.com/qS0cjT8.jpeg>Rubberstamp."},
+    {searchString: "Nixon", explanationText: "<img src=https://i.imgur.com/sH20sKY.jpeg>Big Boss."},
+    {searchString: "Dick", explanationText: "<img src=https://i.imgur.com/sH20sKY.jpeg>Big Boss."},
+   {searchString: "Congress", explanationText: "<img src=https://i.imgur.com/ral6aeQ.jpeg>Whose the guy on the right?"},
+    {searchString: "Biden", explanationText: "<img src=https://i.imgur.com/4hZrIoh.jpeg>Nice guy. Not going anywhere, though."},
+    {searchString: "Jackson", explanationText: "<img src=https://i.imgur.com/BLBt5Wu.jpeg>You couldn't be more different. Atleast he likes war."},
+    {searchString: "Scoop", explanationText: "<img src=https://i.imgur.com/BLBt5Wu.jpeg>You couldn't be more different. Atleast he likes war."},
+    {searchString: "Henry", explanationText: "<img src=https://i.imgur.com/EaNGZQj.jpeg>Jolly."},
+    {searchString: "Kissinger", explanationText: "<img src=https://i.imgur.com/EaNGZQj.jpeg>Jolly."},
+  {searchString: "you're John Connally, and they're not.", explanationText: "<img src=https://i.img ur.com/nMnXcxa.jpeg>"},
+    {searchString: "Soviet", explanationText: "<img src=https://i.imgur.com/KObqctT.jpeg>Enviable"},
+    {searchString: "Communist", explanationText: "<img src=https://i.imgur.com/KObqctT.jpeg>Enviable."},
+    {searchString: "Red bastards", explanationText: "<img src=https://i.imgur.com/KObqctT.jpeg>Enviable."},
+    {searchString: "cold war", explanationText: "<img src=https://i.img ur.com/nMnXcxa.jpeg>Stallin'"},
+    {searchString: "Detente", explanationText: "<img src=https://i.imgur.com/eDi7YEI.jpeg>If Nixon does it, it's good."},
+    {searchString: "SALT", explanationText: "<img src=https://i.imgur.com/Bfq7WV7.jpeg>Don't give a damn."},
 
 ];
 
@@ -1041,150 +1072,7 @@ tooltipList = [
       box-sizing: border-box;
     }
     
-    #bonus_menu_area {
-      margin-top: 120px;
-    }
-        }
-        .inner_window_question {
-            min-height: 321px;
-            height: auto !important;
-            display: flex;
-            flex-direction: column;
-        }
-        .inner_inner_window {
-            height: auto;
-            transition: height 0.3s ease;
-        }
-        .inner_window_question p {
-            margin: 0;
-            padding: 0;
-            margin-top: auto;
-            transform: translateY(-4px); 
-        }
-
-        #question_form br { display: none; }
-
-        #question_form form {
-            display: grid;
-            grid-template-columns: auto 1fr; 
-            align-items: start;         
-            row-gap: 0;
-            max-width: 930px
-        }
-
-        #question_form input[type="radio"] {
-            grid-column: 1;
-            margin: 0;
-            margin-right: -3px;
-            align-self: center;           
-            transform: translateY(-1px); 
-        }
-
-        #question_form input[type="radio"] + label {
-            grid-column: 2;
-            display: block;                  
-            padding: 3px 6px; 
-            margin: 0;      
-            line-height: 1.2;
-            border: none; 
-            border-bottom: 1px solid #ccc; 
-            background: #f9f9f9;
-            transition: background-color .2s, border-color .2s;
-            cursor: pointer;
-            width: min(100%, 930px);
-        }
-
-        #question_form form > input[type="radio"]:last-of-type + label {
-            border-bottom: none;
-        }
-
-        #question_form label {
-            font-size: 14px;
-            font-weight: 400; 
-            margin: 1px; /* prevent any bottom margin */
-            line-height: 1.2;
-        }
-
-        #question_form input[type="radio"]:checked + label {
-            background: #EDF3F7;
-            border-bottom-color: #548EAD;
-        }
-
-        #question_form input[type="radio"] + label:hover,
-        #question_form input[type="radio"] + label:focus {
-            font-size: 14px;
-            font-weight: 400; 
-            background: #f1f1f1;
-        }
-
-        @media only screen and (max-width: 768px) {
-            #opponent_selection_description_window p {
-                display: none !important;
-            }
-            .inner_window_question {
-                height: auto !important;
-                min-height: 0 !important;
-                max-height: none !important;
-                position: static !important;
-                top: auto !important;
-                bottom: auto !important;
-                flex: 0 1 auto !important;
-                align-self: auto !important;
-                grid-row: auto !important;
-                grid-column: auto !important;
-                justify-self: auto !important;
-                display: flow-root !important;  
-                overflow: visible !important;
-                box-sizing: border-box !important;
-                max-height: 395px;
-            }
-            .inner_window_question > :first-child { margin-top: 0; }
-            .inner_window_question > :last-child  { margin-bottom: 0; }
-
-            .inner_window_question,
-            #results_container,
-            #overall_details_container,
-            #main_content_area_reading,
-            #inner_window_2,
-            #inner_window_3,
-            #inner_window_4,
-            #advisors {
-                font-size: 1.8em;
-            }
-
-            #inner_window_2,
-            #inner_window_3 {
-                height: 82%;
-            }
-
-            #headquarter {
-                overflow: auto;
-                font-size: 1.5em;
-            }
-
-            #inner_window_2 select,
-            #inner_window_3 select,
-            #inner_window_4 select {
-                font-size: 1em;
-                padding: 10px;
-            }
-
-            #inner_window_2 button,
-            #inner_window_3 button,
-            #inner_window_4 button,
-            #game_window button,
-            #headquarter button,
-            #advisorsDiv button {
-                font-size: 1em;
-                line-height: 2em;
-            }
-
-            #inner_window_2,
-            #inner_window_3,
-            #inner_window_4 {
-                overflow: auto;
-            }
-
+  
     `;
     document.head.appendChild(style);
     
