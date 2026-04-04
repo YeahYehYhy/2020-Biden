@@ -520,9 +520,33 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-    {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor bastard."},
-    {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>Former mentor. He once controlled America, now he can't even control his vices. Poor bastard."},
-    {searchString: "Read this.", explanationText: "<img src=https://i.imgur.com/XI0WpZD.jpeg>"},
+    {searchString: "Lyndon", explanationText: "<img src=https://i.imgur.com/uzU5YSL.jpeg>Miss him."},
+    {searchString: "Johnson", explanationText: "<img src=https://i.imgur.com/uzU5YSL.jpeg>Miss him."},
+    {searchString: "Look at this.", explanationText: "<img src=https://i.imgur.com/xaH8Q1M.png>"},
+    {searchString: "Kennedy", explanationText: "<img src=https://i.imgur.com/m39tJQR.jpeg>Splat."},
+    {searchString: "Saigon", explanationText: "<img src=https://i.imgur.com/Zw81qjK.jpeg>Less weight on this country's back."},
+    {searchString: "price controls on oil", explanationText: "<img src=https://i.imgur.com/UC9NBMy.jpeg>"},
+    {searchString: "Thompson", explanationText: "<img src=https://i.imgur.com/XybVoHV.jpeg>Never has a cigarette out his mouth."},
+    {searchString: "George Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
+    {searchString: "Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
+    {searchString: "Mao's", explanationText: "<img src=https://i.imgur.com/l1I9XJj.jpeg>Nobody's ever whined about me that much."},
+    {searchString: "Thompson", explanationText: "<img src=https://i.imgur.com/Plp4faR.jpeg>Atleast he's well-meaning."},
+    {searchString: "Percy", explanationText: "<img src=https://i.imgur.com/0WF1NK7.jpeg>Why is he running?"},
+    {searchString: "Reagan", explanationText: "<img src=https://i.imgur.com/vBVRNqq.jpeg>Wish he'd stop the cowboy schtick."},
+    {searchString: "Cheney", explanationText: "<img src=https://i.imgur.com/TwEXxIH.jpeg>Presidential."},
+    {searchString: "Morton", explanationText: "<img src=https://i.imgur.com/xxbvoT1.jpeg>Wish someone could stop that man. He's too nice."},
+    {searchString: "Agnew", explanationText: "<img src=https://i.imgur.com/dpRxnSQ.jpeg>Formerly Dick's standby asshole. Currently insane."},
+    {searchString: "Dallas", explanationText: "<img src=https://i.imgur.com/wEzQvpm.jpeg>Great place. Just keep your head down."},
+    {searchString: "Oswald", explanationText: "<img src=https://i.imgur.com/K8OgZu7.jpeg>Almost got me. Almost."},
+    {searchString: "Jimmy", explanationText: "<https://i.imgur.com/L5j6dlp.jpeg>The Governor with the Iron Heart."},
+    {searchString: "Carter", explanationText: "<https://i.imgur.com/L5j6dlp.jpeg>The Governor with the Iron Heart."},
+    {searchString: "Morris", explanationText: "<img src=https://i.imgur.com/azkSRbh.jpeg>Walking the plank."},
+    {searchString: "Udall", explanationText: "<img src=https://i.imgur.com/azkSRbh.jpeg>Walking the plank."},
+    {searchString: "Wallace", explanationText: "<img src=https://i.imgur.com/fwY3DLC.jpeg>Back to being a good boy."},
+    {searchString: "Brown", explanationText: "<https://i.imgur.com/EdNIk7o.jpeg>Low rider."},
+    {searchString: "Jerry", explanationText: "<https://i.imgur.com/EdNIk7o.jpeg>Low rider."},
+    {searchString: "Ted", explanationText: "<https://i.imgur.com/MDjuVCZ.jpeg>Put too much water in his boiling pot."},
+    {searchString: "Bobby", explanationText: "<https://i.imgur.com/jrb975b.jpeg>Scurried off without any cheese."},
 
 ];
 
