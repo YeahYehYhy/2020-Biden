@@ -52,6 +52,16 @@ campaignTrail_temp.global_parameter_json = [
     }
 ];
 
+campaignTrail_temp.modBoxTheme = {
+     "header_color": "#5e3131",
+     "header_text_color": "#ffffff",
+     "description_text_color": "#000000",
+     "description_background_color": "#ffe7e5",
+     "main_color": "#5e3131",
+     "secondary_color": "#552a2a",
+     "ui_text_color": "#ffffff"
+}
+
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
@@ -94,7 +104,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p><p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#25090e !important; border-color:#25090e!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FDF8F8, #FFF2F2 )!important; font-style: italic; font-size: 14px;'>“Something is wrong with America. I wonder sometimes what people are thinking about or if they're thinking at all.”</blockquote></p><p>Who is Bob Dole? Well, he's your running mate. Why? The media likes to speculate that you've chose him for his Mid-Western appeal or his conservative credentials. The true answer is much simpler. He is a loyal party man, who'll stand by you thick and thin, while playing his part well. Lyndon had a habit of forgiving weakness for loyalty, but Bob grants you both. <p> He's no crybaby like Hubert, his work wrangling both the renegade wing and the establishment wing together is invaluable to you, and his cleanliness assures you won't have to go through another Agnew fiasco like Dick did. If you wish to maintain the facade of a strong, respectable leader in harsh times, Dole's your only choice.",
+            "description_as_running_mate": "<div style='overflow-y:scroll;height:200px;'><p><p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#25090e !important; border-color:#25090e!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FDF8F8, #FFF2F2 )!important; font-style: italic; font-size: 14px;'>“Something is wrong with America. I wonder sometimes what people are thinking about or if they're thinking at all.”</blockquote></p><p>Who is Bob Dole? Well, he's your running mate. Why? The media likes to speculate that you've chose him for his Mid-Western appeal or his conservative credentials. The true answer is much simpler. He is a loyal party man, who'll stand by you thick and thin, while playing his part well. Lyndon had a habit of forgiving weakness for loyalty, but Bob grants you both. <p> He's no crybaby like Hubert, his work wrangling both the renegade wing and the establishment wing together is invaluable to you, and his cleanliness assures you won't have to go through another Agnew fiasco like Dick did. If you wish to maintain the appearance of a strong, respectable leader in harsh times, Dole's your only choice.",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -530,8 +540,8 @@ tooltipList = [
     {searchString: "Saigon", explanationText: "<img src=https://i.imgur.com/Zw81qjK.jpeg>Less weight on this country's back."},
     {searchString: "that energy bill", explanationText: "<img src=https://i.imgur.com/UC9NBMy.jpeg>"},
     {searchString: "Thompson", explanationText: "<img src=https://i.imgur.com/XybVoHV.jpeg>Mouth never empty. Won't take that cigarette out."},
-    {searchString: "George Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
-    {searchString: "Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Rather McGovern became president if he ran."},
+    {searchString: "George Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Is Daddy proud yet?"},
+    {searchString: "Bush", explanationText: "<img src=https://i.imgur.com/Wia4QqV.jpeg>Is Daddy proud yet?"},
     {searchString: "Mao's", explanationText: "<img src=https://i.imgur.com/l1I9XJj.jpeg>Nobody's ever whined about me that much."},
     {searchString: "Thompson", explanationText: "<img src=https://i.imgur.com/Plp4faR.jpeg>Freak bum with a cigarette kink."},
     {searchString: "McGovern", explanationText: "<img src=https://i.imgur.com/Plp4faR.jpeg>Atleast he's well-meaning."},
@@ -593,6 +603,8 @@ tooltipList = [
     {searchString: "cold war", explanationText: "<img src=https://i.img ur.com/nMnXcxa.jpeg>Stallin'"},
     {searchString: "Detente", explanationText: "<img src=https://i.imgur.com/eDi7YEI.jpeg>If Nixon does it, it's good."},
     {searchString: "SALT", explanationText: "<img src=https://i.imgur.com/Bfq7WV7.jpeg>Don't give a damn."},
+    {searchString: "Eagleton", explanationText: "<img src=https://i.imgur.com/oCgaw6U.jpeg>Poor bastard."},
+    {searchString: "that massive tax cut and spending reduction bill", explanationText: "<img src=https://i.imgur.com/oCgaw6U.jpeg>If you fail, try, try again."},
 
 ];
 
