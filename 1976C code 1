@@ -276,16 +276,20 @@ function addDynamicCSS() {
         .inner_window_question h3 .mytooltip{
         }
 
-        .mytooltip {
-            position: relative;
-            display: inline-block;
-          font-weight: bold;
-          text-decoration: underline;
-          font-size: 1em;
-            cursor: pointer;
-            border-radius: 7px;
-          transition: text-shadow 0.3s ease, color 0.3s ease;
-        }
+    .mytooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.96em;
+      color: #950606;
+      text-decoration: underline;
+      text-shadow: 
+          0 0 10px rgba(239, 132, 144, 0.6),
+          0 0 20px rgba(239, 132, 144, 0.4), 
+          0 0 30px rgba(239, 132, 144, 0.2);
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
 
         .mytooltip .mytooltiptext {
             width: 150px;
@@ -314,10 +318,10 @@ function addDynamicCSS() {
             height: auto;
         }
 
-        .mytooltip:hover .mytooltiptext {
-            opacity: 1;
-            transition-delay: 0.5s;
-        }
+    .mytooltip:hover .mytooltiptext {
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
 
 
         .inner_window_w_desc {
