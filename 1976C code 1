@@ -362,8 +362,8 @@ function addDynamicCSS() {
       0 0 20px rgba(252, 198, 187, 0.3),  
       0 0 40px rgba(252, 198, 187, 0.1);
   
-  height: 62%;
-  width: 50%;
+  height: 66%;
+  width: 46%;
   top: 17%;
   left: 25%;
   
