@@ -324,23 +324,80 @@ function addDynamicCSS() {
     }
 
 
-        .inner_window_w_desc {
-            border-style: none;
-        }
+.inner_window_question {
+  background-color:#FFFFFF;
+  border-radius: 5px; 
+  position: relative;
+  overflow: visible;
+}
 
-        .inner_window_w_desc h3 {
-            color: white;
-            margin: 0;
-        }
+.inner_window_question h3 {
+  background-color:#FFEEEE;
+  border-radius: 10px;
+  box-shadow: 
+  0 0 5px rgba(224, 255, 255, 0.5),  
+  0 0 10px rgba(224, 255, 255, 0.3),  
+  0 0 20px rgba(224, 255, 255, 0.1); 
+}
 
-        .inner_window_question h3 {
-            margin: 0 1em .5em;
-            border: double;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-color: #c9c9c9;
-            background-color: antiquewhite;
-        }
+@keyframes fadeInScale {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.overlay_window {
+  position: absolute;
+  opacity: 0; /* Start hidden */
+  transform: scale(0.8); /* Start slightly smaller */
+  background-color: #FCC6BB;
+  border-radius: 5px;
+  box-shadow:
+      0 0 10px rgba(252, 198, 187, 0.5),  
+      0 0 20px rgba(252, 198, 187, 0.3),  
+      0 0 40px rgba(252, 198, 187, 0.1);
+  
+  height: 62%;
+  width: 50%;
+  top: 17%;
+  left: 25%;
+  
+  border-style: double;
+  border-color: #FCC6BB;
+
+  animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
+}
+
+
+.overlay_window h3 {
+  background-color: #ffffff;
+}
+
+.overlay_window_content {
+  color: #000000;
+}
+
+#progress_bar h3 {
+  color: #000000;
+  }
+
+  .inner_inner_window h3 {
+      color: #000000;
+      }
+
+  .inner_window_sign_display {
+      background-color:#f1f1f1;
+  }
+
+  .overlay_window img {
+    width: 251px;
+    height: 134px;
+}
 
         #map_container {
             height: 90%;
@@ -362,7 +419,7 @@ function addDynamicCSS() {
             font-size: 1.5em;
             background-color: antiquewhite;
             border-bottom: double;
-            border-color: #C9C9C9;
+            border-color: #FFFFFF;
         }
 
         #campaign_sign p {
@@ -592,8 +649,6 @@ tooltipList = [
     {searchString: "Rumsfeld", explanationText: "<img src=https://i.imgur.com/BuLYR9I.jpeg>Slick."},
     {searchString: "Donald", explanationText: "<img src=https://i.imgur.com/BuLYR9I.jpeg>Slick."},
     {searchString: "Jaffe", explanationText: "<img src=https://i.imgur.com/qS0cjT8.jpeg>Rubberstamp."},
-    {searchString: "Nixon", explanationText: "<img src=https://i.imgur.com/sH20sKY.jpeg>Big Boss."},
-    {searchString: "Dick", explanationText: "<img src=https://i.imgur.com/sH20sKY.jpeg>Big Boss."},
    {searchString: "Congress", explanationText: "<img src=https://i.imgur.com/ral6aeQ.jpeg>Whose the guy on the right?"},
     {searchString: "Biden", explanationText: "<img src=https://i.imgur.com/4hZrIoh.jpeg>Nice guy. Not going anywhere, though."},
     {searchString: "Jackson", explanationText: "<img src=https://i.imgur.com/BLBt5Wu.jpeg>You couldn't be more different. Atleast he likes war."},
