@@ -6096,12 +6096,6 @@ class ChartEnhancer {
       name: "Eugene McCarthy",
       desc: "Desperate for attention. Won't let this go."
     })],
-
-    ["Dole", this.createTooltip("Dole", {
-      img: "https://i.imgur.com/oUUF6kE.jpeg",
-      name: "Bob Dole",
-      desc: "(un)happy to be here."
-    })],
     ]);
   }
 
