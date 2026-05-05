@@ -202,7 +202,7 @@ jet_data = {
     "endingTextColor": "#000000"
 }
 
-    HistHexcolour=["#1072a1","#c23636" "#90EE90"];
+    HistHexcolour=["#1072a1","#c23636","#90EE90"];
     HistName=["Edmund G. Brown","John B. Connally","McCarthy/Others"];
     HistEV=[367,171,0];
     HistPV=["43,410,256","35,678,559","1,449,693"];
