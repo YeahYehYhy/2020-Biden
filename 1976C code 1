@@ -202,7 +202,7 @@ jet_data = {
     "endingTextColor": "#000000"
 }
 
-    HistHexcolour=["#1072a1","#c23636"];
+    HistHexcolour=["#1072a1","#c23636" "#90EE90"];
     HistName=["Jerry Brwon","John Connally"];
     HistEV=[367,171];
     HistPV=["42,182,882","36,906,578"];
