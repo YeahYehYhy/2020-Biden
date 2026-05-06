@@ -6458,12 +6458,16 @@ function switcheroo1() {
     var id = e.candidate_json.map(p=>p.pk).indexOf(91)
     e.candidate_json[id].fields.first_name = "Jerry"
     e.candidate_json[id].fields.last_name = "Brown"  
+    e.candidate_json[1].fields.color_hex = "#252360"
+
 }
 
 function switcheroo2() {
     var id = e.candidate_json.map(p=>p.pk).indexOf(91)
     e.candidate_json[id].fields.first_name = "George"
     e.candidate_json[id].fields.last_name = "Wallace"  
+    e.candidate_json[1].fields.color_hex = "#08053D"
+
 }
 
 function switcheroo3() {
@@ -6488,9 +6492,6 @@ function add_cand(candidate_ID) {
 }
 
 function add_a_fourth_guy1() {
-    // the aforementioned aero here.
-    // my god. what have you requested of me.
-    // death to parlor modding <- remove this line before publishing
     e = campaignTrail_temp;
 
     var id = 26;
@@ -6564,7 +6565,7 @@ cyoAdventure = function (a) {
     const ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1];
     e.noCounter = campaignTrail_temp.player_answers.length;
 
-    if (12897, 12898, 12899) {
+    if ([12897, 12898, 12899].includes(ans)) {
         switcheroo1();
     }
 
