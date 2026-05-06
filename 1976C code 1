@@ -74,7 +74,7 @@ campaignTrail_temp.candidate_json = [
             "state": "Texas",
             "priority": 1,
             "description": "<div style='overflow-y:scroll;height:200px;'><p><p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#25090e !important; border-color:#25090e!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FDF8F8, #FFF2F2 )!important; font-style: italic; font-size: 14px;'>“I find that I take a great deal of pleasure knowing I get up people's noses to some degree.”</blockquote></p><p>There is no man more fit for the Presidency of the United States than John Connally. Connally is not an ideological crusader. He is not a firebrand in the type of George Wallace or Ronald Reagan. He is the establishment. A man revered by the likes of Lyndon Baines Johnson and Richard Milhous Nixon. A man who has crawled his way up the ranks of power without conceding a lick of his dignity groveling at the feet of the Democratic and Republican apparatus. <p> From his inception, he was born to be the man of the moment. His oratory skills, confidence, and orderly looks dominated any space he found himself in. Under the stewardship of both Lyndon and Dick, he has absorbed their strengths, while avoiding taking their weaknesses. <p>  He has become a political amalgamation, the embodiment of the swamp in the eyes of a disillusioned population. Despite the blood flooding into the irritated scars of the nation's skin making them ready to burst, he will weather the storm, and become President of the United States.",
-            "color_hex": "#850f0f",
+            "color_hex": "#750909",
             "secondary_color_hex": null,
             "is_active": 1,
             "image_url": "https://i.imgur.com/oULvTjU.jpeg",
@@ -120,7 +120,7 @@ campaignTrail_temp.candidate_json = [
             "state": "StupidIdiotTown",
             "priority": 1,
             "description": "<p>Put description here</p>",
-            "color_hex": "#28227c",
+            "color_hex": "#0E0854",
             "secondary_color_hex": null,
             "is_active": 0,
             "image_url": "https://www.jetsimon.com/public/candidateexample.png",
@@ -324,20 +324,27 @@ function addDynamicCSS() {
     }
 
 
-.inner_window_question {
-  background-color:#FFFFFF;
-  border-radius: 5px; 
-  position: relative;
-  overflow: visible;
-}
+            .inner_window_question {
+                height: auto !important;
+                min-height: 0 !important;
+                max-height: none !important;
+                position: static !important;
+                top: auto !important;
+                bottom: auto !important;
+                flex: 0 1 auto !important;
+                align-self: auto !important;
+                grid-row: auto !important;
+                grid-column: auto !important;
+                justify-self: auto !important;
+                display: flow-root !important;  
+                overflow: visible !important;
+                box-sizing: border-box !important;
+                max-height: 395px;
+            }
 
 .inner_window_question h3 {
   background-color:#FFEEEE;
   border-radius: 10px;
-  box-shadow: 
-  0 0 5px rgba(224, 255, 255, 0.5),  
-  0 0 10px rgba(224, 255, 255, 0.3),  
-  0 0 20px rgba(224, 255, 255, 0.1); 
 }
 
 @keyframes fadeInScale {
@@ -353,8 +360,6 @@ function addDynamicCSS() {
 
 .overlay_window {
   position: absolute;
-  opacity: 0; /* Start hidden */
-  transform: scale(0.8); /* Start slightly smaller */
   background-color: #FCC6BB;
   border-radius: 5px;
   box-shadow:
@@ -362,15 +367,15 @@ function addDynamicCSS() {
       0 0 20px rgba(252, 198, 187, 0.3),  
       0 0 40px rgba(252, 198, 187, 0.1);
   
-  height: 66%;
-  width: 46%;
+  height: 68%;
+  width: 48%;
   top: 17%;
   left: 25%;
   
-  border-style: double;
-  border-color: #FCC6BB;
+  border-style: single;
+  border-color: #000000;
 
-  animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
+  animation: fadeInScale 0.2s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
 }
 
 
