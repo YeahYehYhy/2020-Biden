@@ -339,7 +339,7 @@ function addDynamicCSS() {
                 display: flow-root !important;  
                 overflow: visible !important;
                 box-sizing: border-box !important;
-                max-height: 395px;
+                max-height: 500px;
             }
 
 .inner_window_question h3 {
@@ -362,20 +362,8 @@ function addDynamicCSS() {
   position: absolute;
   background-color: #FCC6BB;
   border-radius: 5px;
-  box-shadow:
-      0 0 10px rgba(252, 198, 187, 0.5),  
-      0 0 20px rgba(252, 198, 187, 0.3),  
-      0 0 40px rgba(252, 198, 187, 0.1);
-  
-  height: 68%;
-  width: 48%;
-  top: 17%;
-  left: 25%;
-  
-  border-style: single;
-  border-color: #000000;
 
-  animation: fadeInScale 0.2s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
+  animation: fadeInScale 0.1s forwards;
 }
 
 
