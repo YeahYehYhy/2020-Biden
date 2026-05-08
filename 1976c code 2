@@ -6449,6 +6449,36 @@ var browndead = 0;
 var youdead = 0;
 var economy = 0;
 
+const targetNode = document.getElementById("game_window");
+const config = { attributes: true, childList: true, subtree: true };
+
+function onGameWindowChanged(mutationList, observer) {
+    updateQuestionBanner();
+}
+
+function updateQuestions(mutationList, observer) {
+    if (answerObject.fields.condition != null) {
+        answer.disabled = !(eval(answerObject.fields.condition));
+    }
+}
+
+const observer = new MutationObserver(onGameWindowChanged);
+	observer.observe(targetNode, config);
+
+e.VPisCandidate = 0;
+function updateQuestionBanner() {
+    let questionBanner = document.getElementById("campaign_sign");
+    if (!questionBanner || questionBanner.nodeName != "DIV") return;
+    let img = document.createElement('img');
+    if(e.VPisCandidate == 0)
+    {
+        img.src = 'https://i.imgur.com/8FY3R3z.png';
+        img.width = 280; // Adjust the width as needed
+        img.height = 105; // Adjust the height as needed
+    } 
+    questionBanner.replaceWith(img);
+}
+
 let polling = e.current_results;
 function tunnel(new_q){
     return e.questions_json[e.questions_json.map(f=>f.pk).indexOf(new_q)];
