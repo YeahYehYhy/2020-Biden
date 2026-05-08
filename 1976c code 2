@@ -6472,9 +6472,9 @@ function updateQuestionBanner() {
     let img = document.createElement('img');
     if(e.VPisCandidate == 0)
     {
-        img.src = 'https://i.imgur.com/riXtQ0F.png';
+        img.src = 'https://i.imgur.com/xgjBjv3.png';
         img.width = 280; // Adjust the width as needed
-        img.height = 140; // Adjust the height as needed
+        img.height = 105; // Adjust the height as needed
     } 
     questionBanner.replaceWith(img);
 }
